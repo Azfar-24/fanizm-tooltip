@@ -389,12 +389,19 @@ const ViewContest = () => {
                     </div>
 
                     <div class="practice-contest__qus-list">
-                      <div
-                        class="practice-contest__qus-item selected"
-                        onClick={() => setViewContest(3)}
+                      <Tippy
+                        theme="custom"
+                        animation="fade"
+                        visible={true}
+                        content={"This is a highlighted movie!"}
                       >
-                        <span>SP</span>
-                      </div>
+                        <div
+                          class="practice-contest__qus-item selected"
+                          onClick={() => setViewContest(3)}
+                        >
+                          <span>SP</span>
+                        </div>
+                      </Tippy>
                       <div class="practice-contest__qus-item">
                         <span>DSP</span>
                       </div>
@@ -404,6 +411,7 @@ const ViewContest = () => {
                       <div class="practice-contest__qus-item">
                         <span>IPS</span>
                       </div>
+                      <div class="quiz-overlay"></div>
                     </div>
 
                     <div className="practice-contest__note">
@@ -488,12 +496,19 @@ const ViewContest = () => {
                     </div>
 
                     <div class="practice-contest__qus-list">
-                      <div
-                        class="practice-contest__qus-item correct"
-                        onClick={() => setViewContest(4)}
+                      <Tippy
+                        theme="custom"
+                        animation="fade"
+                        visible={true}
+                        content={"This is a highlighted movie!"}
                       >
-                        <span>SP</span>
-                      </div>
+                        <div
+                          class="practice-contest__qus-item correct"
+                          onClick={() => setViewContest(4)}
+                        >
+                          <span>SP</span>
+                        </div>
+                      </Tippy>
                       <div class="practice-contest__qus-item">
                         <span>DSP</span>
                       </div>
@@ -503,6 +518,7 @@ const ViewContest = () => {
                       <div class="practice-contest__qus-item">
                         <span>IPS</span>
                       </div>
+                      <div class="quiz-overlay"></div>
                     </div>
 
                     <div className="practice-contest__note">
@@ -589,12 +605,19 @@ const ViewContest = () => {
                     </div>
 
                     <div class="practice-contest__qus-list">
-                      <div
-                        class="practice-contest__qus-item selected"
-                        onClick={() => setViewContest(5)}
+                      <Tippy
+                        theme="custom"
+                        animation="fade"
+                        visible={true}
+                        content={"This is a highlighted movie!"}
                       >
-                        <span>Bomb</span>
-                      </div>
+                        <div
+                          class="practice-contest__qus-item selected"
+                          onClick={() => setViewContest(5)}
+                        >
+                          <span>Bomb</span>
+                        </div>
+                      </Tippy>
                       <div class="practice-contest__qus-item">
                         <span>Axe</span>
                       </div>
@@ -604,6 +627,7 @@ const ViewContest = () => {
                       <div class="practice-contest__qus-item">
                         <span>None of the above</span>
                       </div>
+                      <div className="quiz-overlay"></div>
                     </div>
 
                     <div className="practice-contest__note">
@@ -689,23 +713,35 @@ const ViewContest = () => {
                       <CircularProgress duration={10} />
                     </div>
 
-                    <div class="practice-contest__qus-list">
-                      <div
-                        class="practice-contest__qus-item selected wrong"
-                        onClick={() => setViewContest(6)}
-                      >
-                        <span>Bomb</span>
+                    <Tippy
+                      theme="custom"
+                      animation="fade"
+                      visible={true}
+                      content={"This is a highlighted movie!"}
+                    >
+                      <div class="practice-contest__qus-list ">
+                        <div
+                          class="practice-contest__qus-item selected wrong highlighted"
+                          onClick={() => setViewContest(6)}
+                          style={{ border: "none" }}
+                        >
+                          <span>Bomb</span>
+                        </div>
+                        <div
+                          class="practice-contest__qus-item correct"
+                          style={{ border: "none" }}
+                        >
+                          <span>Axe</span>
+                        </div>
+                        <div class="practice-contest__qus-item">
+                          <span>Bullet</span>
+                        </div>
+                        <div class="practice-contest__qus-item">
+                          <span>None of the above</span>
+                        </div>
                       </div>
-                      <div class="practice-contest__qus-item correct">
-                        <span>Axe</span>
-                      </div>
-                      <div class="practice-contest__qus-item">
-                        <span>Bullet</span>
-                      </div>
-                      <div class="practice-contest__qus-item">
-                        <span>None of the above</span>
-                      </div>
-                    </div>
+                    </Tippy>
+                    <div className="quiz-overlay"></div>
 
                     <div className="practice-contest__note">
                       <span>Correct answer will get you 10 points.</span>
@@ -787,10 +823,22 @@ const ViewContest = () => {
                     </a>
                   </div>
                   <div class="total-points">
-                    <div className="result-button">
-                      Total Points: <span>10.00</span>
-                    </div>
+                    <Tippy
+                      theme="custom"
+                      animation="fade"
+                      visible={true}
+                      content={"This is a highlighted movie!"}
+                      placement="top"
+                    >
+                      <div
+                        className="result-button highlighted"
+                        onClick={() => nevigate("/")}
+                      >
+                        Total Points: <span>10.00</span>
+                      </div>
+                    </Tippy>
                   </div>
+                  <div class="quiz-overlay"></div>
                 </div>
               </>
             )}
