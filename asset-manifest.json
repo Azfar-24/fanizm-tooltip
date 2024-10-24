@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/fanizm-tooltip/static/css/main.8824ce3a.css",
-    "main.js": "/fanizm-tooltip/static/js/main.c4eadc8b.js",
+    "main.css": "/fanizm-tooltip/static/css/main.79fd5605.css",
+    "main.js": "/fanizm-tooltip/static/js/main.fc870bb4.js",
     "AppLayout.js": "/fanizm-tooltip/static/js/AppLayout.2cf67b2c.chunk.js",
     "home.css": "/fanizm-tooltip/static/css/home.a7ef2556.chunk.css",
-    "home.js": "/fanizm-tooltip/static/js/home.814adc7f.chunk.js",
+    "home.js": "/fanizm-tooltip/static/js/home.402974b1.chunk.js",
     "static/js/487.826726c5.chunk.js": "/fanizm-tooltip/static/js/487.826726c5.chunk.js",
     "index.html": "/fanizm-tooltip/index.html",
-    "main.8824ce3a.css.map": "/fanizm-tooltip/static/css/main.8824ce3a.css.map",
-    "main.c4eadc8b.js.map": "/fanizm-tooltip/static/js/main.c4eadc8b.js.map",
+    "main.79fd5605.css.map": "/fanizm-tooltip/static/css/main.79fd5605.css.map",
+    "main.fc870bb4.js.map": "/fanizm-tooltip/static/js/main.fc870bb4.js.map",
     "AppLayout.2cf67b2c.chunk.js.map": "/fanizm-tooltip/static/js/AppLayout.2cf67b2c.chunk.js.map",
     "home.a7ef2556.chunk.css.map": "/fanizm-tooltip/static/css/home.a7ef2556.chunk.css.map",
-    "home.814adc7f.chunk.js.map": "/fanizm-tooltip/static/js/home.814adc7f.chunk.js.map",
+    "home.402974b1.chunk.js.map": "/fanizm-tooltip/static/js/home.402974b1.chunk.js.map",
     "487.826726c5.chunk.js.map": "/fanizm-tooltip/static/js/487.826726c5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8824ce3a.css",
-    "static/js/main.c4eadc8b.js"
+    "static/css/main.79fd5605.css",
+    "static/js/main.fc870bb4.js"
   ]
 }
