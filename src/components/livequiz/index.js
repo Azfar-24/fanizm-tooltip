@@ -270,8 +270,8 @@ const LiveQuiz = () => {
                                                   </span>
                                                   <i className="icon-share-arrow"></i>
                                                 </h3>
-                                                <div className="max-prize-pool pool-with-prize-r">
-                                                  <div className="prize-pool-l">
+                                                <div className="max-prize-pool-fn pool-with-prize-r">
+                                                  <div className="prize-pool-l-fn">
                                                     {contest.heading}
                                                   </div>
                                                   <Tippy
@@ -318,8 +318,8 @@ const LiveQuiz = () => {
                                                 </div>
                                               </div>
                                               <div className="display-table d-flex top-btm-10px">
-                                                <div className="progress-bar-default display-table-cell v-mid">
-                                                  <div className="progress">
+                                                <div className="progress-bar-default-fn display-table-cell v-mid">
+                                                  <div className="progress-fn">
                                                     <div
                                                       role="progressbar"
                                                       className="progress-bar"
@@ -337,7 +337,7 @@ const LiveQuiz = () => {
                                                     ></div>
                                                   </div>
 
-                                                  <div className="progress-bar-value">
+                                                  <div className="progress-bar-value-fn">
                                                     <span className="total-entries">
                                                       {contest.left} left
                                                     </span>
@@ -398,9 +398,9 @@ const LiveQuiz = () => {
                                                 </span>
                                                 <i className="icon-share-arrow"></i>
                                               </h3>
-                                              <div className="max-prize-pool pool-with-prize-r">
-                                                <div className="prize-pool-l">
-                                                  {" "}
+                                              <div className="max-prize-pool-fn pool-with-prize-r">
+                                                <div className="prize-pool-l-fn">
+                                                 
                                                   Practise Contest
                                                 </div>
                                                 <div className="display-table-cell v-mid position-relative entry-criteria">
@@ -417,8 +417,8 @@ const LiveQuiz = () => {
                                               </div>
                                             </div>
                                             <div className="display-table d-flex top-btm-10px">
-                                              <div className="progress-bar-default display-table-cell v-mid">
-                                                <div className="progress">
+                                              <div className="progress-bar-default-fn display-table-cell v-mid">
+                                                <div className="progress-fn">
                                                   <div
                                                     role="progressbar"
                                                     className="progress-bar"
@@ -429,7 +429,7 @@ const LiveQuiz = () => {
                                                   ></div>
                                                 </div>
 
-                                                <div className="progress-bar-value">
+                                                <div className="progress-bar-value-fn">
                                                   <span className="total-entries">
                                                     5 left
                                                   </span>

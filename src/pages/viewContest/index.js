@@ -193,8 +193,8 @@ const ViewContest = () => {
                                                   </h3>
                                                 </div>
                                                 <div className="display-table d-flex top-btm-10px contest-pbar-view ">
-                                                  <div className="progress-bar-default display-table-cell v-mid">
-                                                    <div className="progress">
+                                                  <div className="progress-bar-default-fn display-table-cell v-mid">
+                                                    <div className="progress-fn">
                                                       <div
                                                         role="progressbar"
                                                         className="progress-bar"
@@ -212,7 +212,7 @@ const ViewContest = () => {
                                                       ></div>
                                                     </div>
 
-                                                    <div className="progress-bar-value">
+                                                    <div className="progress-bar-value-fn">
                                                       <span className="total-entries">
                                                         {contest.left} left
                                                       </span>

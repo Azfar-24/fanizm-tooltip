@@ -1761,7 +1761,7 @@ circle {
   stroke: #050505;
 }
 
-.progress {
+.progress-fn {
   stroke: #393939; /* Change this color as needed */
   transition: stroke-dasharray 1s linear;
 }

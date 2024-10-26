@@ -375,14 +375,14 @@ body {
   margin-left: 8px;
 }
 
-.max-prize-pool {
+.max-prize-pool-fn {
   display: flex;
   justify-content: space-between;
   align-items: center;
   /* margin-top: 10px; */
 }
 
-.prize-pool-l {
+.prize-pool-l-fn {
   font-size: 14px;
   font-weight: 600;
 }
@@ -432,12 +432,12 @@ body {
   transform: scale(1.06);
 }
 
-.progress-bar-default {
+.progress-bar-default-fn {
   width: 100%;
   margin-top: 10px;
 }
 
-.progress {
+.progress-fn {
   background-color: #333333;
   border-radius: 12px;
   height: 6px;
@@ -445,7 +445,7 @@ body {
   margin: 10px 0;
   transition: width 0.6s ease;
 }
-.LQ-contest-list-view .progress-bar-default .progress {
+.LQ-contest-list-view .progress-bar-default-fn .progress-fn {
   width: 100%;
   border: 1px solid #a9a9a9;
   background-color: initial;
@@ -453,7 +453,7 @@ body {
   border-radius: 4px;
   height: 10px;
 }
-.contest-list-wrapper-fn .contest-list-fn .progress-bar-default .progress-bar-value {
+.contest-list-wrapper-fn .contest-list-fn .progress-bar-default-fn .progress-bar-value-fn {
   font-size: 10px;
   /* font-family: SFProDisplay-Regular; */
   color: #fff;
@@ -470,7 +470,7 @@ body {
   display: flex;
   justify-content: space-between;
 }
-.progress-bar-value {
+.progress-bar-value-fn {
   display: flex;
   justify-content: space-between;
 }
@@ -749,13 +749,13 @@ span.live-highlight img {
   margin: 0;
   position: relative;
 }
-.contest-list-wrapper-fn .progress-bar-default {
+.contest-list-wrapper-fn .progress-bar-default-fn {
   margin-top: 0;
 }
 .contest-pbar-view {
   align-items: center;
 }
-.contest-pbar-view .progress-bar-default {
+.contest-pbar-view .progress-bar-default-fn {
   width: calc(100% - 110px);
   margin-right: 20px;
 }

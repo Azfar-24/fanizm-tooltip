@@ -23,7 +23,7 @@ const CircularProgress = ({ duration }) => {
       <svg>
         <circle className="background" cx="50" cy="50" r="45" />
         <circle
-          className="progress"
+          className="progress-fn"
           cx="50"
           cy="50"
           r="45"
