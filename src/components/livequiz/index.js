@@ -155,7 +155,7 @@ const LiveQuiz = () => {
                   </svg>
                 </div>
                 <span className="head-subtitle-fn">
-                  Win Prizes |<span className="timer">20 Oct - 01:00 PM</span>
+                  Win Prizes |<span className="timer-fn">20 Oct - 01:00 PM</span>
                 </span>
               </div>
               <div className="head-col-right-fn">

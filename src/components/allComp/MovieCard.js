@@ -27,7 +27,7 @@ const MovieCard = ({ title, time, imageUrl, id, coverImg, isHighlighted ,type}) 
         <div className="card-label">{type}</div>
         <div className="time-countdown">
           <FaCalendar className="movie-cal-icon" />
-          <span className="timer">22 Oct, 04:55 PM</span>
+          <span className="timer-fn">22 Oct, 04:55 PM</span>
         </div>
         <div className="winning ">
           <FaTrophy className="movie-trophy-icon" />

@@ -73,7 +73,7 @@ body {
   font-size: 12px;
   display: flex;
 }
-.head-subtitle-fn .timer {
+.head-subtitle-fn .timer-fn {
   margin-left: 2px;
 }
 .mobile-wrap-fn {
@@ -444,6 +444,8 @@ body {
   position: relative;
   margin: 10px 0;
   transition: width 0.6s ease;
+  border: 1px solid #a9a9a9;
+    background-color: initial;
 }
 .LQ-contest-list-view .progress-bar-default-fn .progress-fn {
   width: 100%;
@@ -508,7 +510,7 @@ body {
   font-size: 15px;
   color: #fff;
 }
-.tabs-primary-nav {
+.tabs-primary-nav-fn {
   position: fixed;
   top: 56px;
   left: 0;
@@ -518,30 +520,30 @@ body {
   box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.1);
   border-bottom: 1px solid #0e2c50;
 }
-.tabs-primary-nav,
-.tabs-primary-nav a {
+.tabs-primary-nav-fn,
+.tabs-primary-nav-fn a {
   height: 44px;
   display: flex;
   justify-content: center;
 }
-.tabs-primary-nav a {
+.tabs-primary-nav-fn a {
   font-size: 14px;
   text-transform: uppercase;
   color: #707070;
   padding: 0 20px;
   align-items: center;
 }
-.tabs-primary-nav,
-.tabs-primary-nav a {
+.tabs-primary-nav-fn,
+.tabs-primary-nav-fn a {
   height: 44px;
   display: flex;
   justify-content: center;
 }
-.tabs-primary-nav a.select {
+.tabs-primary-nav-fn a.select {
   color: #e70908;
   position: relative;
 }
-.tabs-primary-nav a.select:after {
+.tabs-primary-nav-fn a.select:after {
   position: absolute;
   left: 0;
   right: 0;
@@ -567,18 +569,18 @@ body {
 .ptr__pull-down-fn {
   transition: transform 0.2s cubic-bezier(0, 0, 0.31, 1);
 }
-.ptr__children-fn .tabs-primary {
+.ptr__children-fn .tabs-primary-fn {
   height: 100%;
   display: flex;
   flex-direction: column;
   margin-top: 44px;
 }
-.tabs-primary .top-fixed.circular-tab {
+.tabs-primary-fn .top-fixed.circular-tab {
   position: static;
   padding: 5px 15px 0;
   margin-top: 0;
 }
-.tabs-primary .top-fixed {
+.tabs-primary-fn .top-fixed {
   position: fixed;
   max-width: 550px;
   z-index: 1;
@@ -607,7 +609,7 @@ body {
   overflow: hidden;
   justify-content: center;
 }
-.tabs-primary .top-fixed.circular-tab .nav {
+.tabs-primary-fn .top-fixed.circular-tab .nav {
   border-radius: 22px;
   overflow: hidden;
   box-shadow: none;
@@ -622,18 +624,18 @@ body {
   border-radius: 22px;
   overflow: hidden;
 }
-.tabs-primary .nav li {
+.tabs-primary-fn .nav li {
   width: 33.33333%;
 }
-.tabs-primary .top-fixed.circular-tab .nav li {
+.tabs-primary-fn .top-fixed.circular-tab .nav li {
   border-radius: 22px;
   overflow: hidden;
 }
-.tabs-primary .nav li.active a {
+.tabs-primary-fn .nav li.active a {
   color: #000;
   position: relative;
 }
-.tabs-primary .nav li a {
+.tabs-primary-fn .nav li a {
   width: 100%;
   color: #707070;
   text-align: center;
@@ -643,7 +645,7 @@ body {
   vertical-align: top;
   padding: 13px;
 }
-.tabs-primary .top-fixed.circular-tab .nav li a {
+.tabs-primary-fn .top-fixed.circular-tab .nav li a {
   font-size: 12px;
   /* padding: 7px 13px;
   color: #707070; */
@@ -664,16 +666,16 @@ body {
   background-color: initial;
   color: #fff;
 }
-.lq-my-contest-wrap .top-fixed.circular-tab .nav li.live-contest a {
+.lq-my-contest-wrap .top-fixed.circular-tab .nav li.live-contest-fn a {
   padding: 3px 10px;
   font-size: 9px;
 }
 .lq-my-contest-wrap
   .top-fixed.circular-tab
   .nav
-  li.live-contest
+  li.live-contest-fn
   a
-  .live-highlight {
+  .live-highlight-fn {
   display: block;
   max-width: 30px;
   text-align: center;
@@ -681,7 +683,7 @@ body {
   padding: 0;
   position: relative;
 }
-.tabs-primary .top-fixed.circular-tab .nav li.active a {
+.tabs-primary-fn .top-fixed.circular-tab .nav li.active a {
   background: #e70908;
   color: #fff;
 }
@@ -689,9 +691,9 @@ body {
 .lq-my-contest-wrap
   .top-fixed.circular-tab
   .nav
-  li.live-contest
+  li.live-contest-fn
   a
-  .live-highlight {
+  .live-highlight-fn {
   display: block;
   max-width: 30px;
   text-align: center;
@@ -710,7 +712,7 @@ body {
   border: 1px solid #707070;
   background-color: #071324;
 }
-.live-contest a {
+.live-contest-fn a {
   padding: 3px 10px !important;
   font-size: 9px !important;
   text-decoration: none;
@@ -719,10 +721,10 @@ body {
   align-items: center;
   justify-content: center;
 }
-span.live-highlight {
+span.live-highlight-fn {
   margin-bottom: -9px;
 }
-span.live-highlight img {
+span.live-highlight-fn img {
   width: calc(100% - 32%);
 }
 .circular-tab .nav li a {
@@ -783,7 +785,7 @@ span.live-highlight img {
 .title-wrap-inner {
   align-items: center;
 }
-.title-wrap-inner .title-right {
+.title-wrap-inner .title-right-fn {
   height: 15px;
   padding: 0 3px;
   border: 1px solid #707070;

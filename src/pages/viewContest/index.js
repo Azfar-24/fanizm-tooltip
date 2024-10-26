@@ -90,14 +90,14 @@ const ViewContest = () => {
                 <div className="default-header-placeholder-fn"></div>
                 <div className="burger-menu-backdrop-fn "></div>
                 <div className="mobile-wrap-fn">
-                  <div className="tabs-primary-nav ">
+                  <div className="tabs-primary-nav-fn ">
                     <a className="select">Mega</a>
                     <a className="">One On One</a>
                   </div>
 
                   <div className="ptr-fn my-contest-ptr__pull-down-fn lighten">
                     <div className="ptr__children-fn">
-                      <div className="tabs-primary">
+                      <div className="tabs-primary-fn">
                         <div className="clearfix row">
                           <div className="top-fixed my-contest-tab circular-tab new-tab  col-xs-12">
                             <ul className="nav">
@@ -106,9 +106,9 @@ const ViewContest = () => {
                                   Upcoming
                                 </a>
                               </li>
-                              <li role="presentation" className="live-contest ">
+                              <li role="presentation" className="live-contest-fn ">
                                 <a role="button" href="#">
-                                  <span className="live-highlight">
+                                  <span className="live-highlight-fn">
                                     <img
                                       src="images/icon-live.png"
                                       alt="live"
@@ -153,11 +153,11 @@ const ViewContest = () => {
                                                 </div>
                                                 <div className="contest-name-heading-description">
                                                   <div
-                                                    class="que-timer"
+                                                    class="que-timer-fn"
                                                     style={{ display: "flex" }}
                                                   >
-                                                    <span class="timer">
-                                                      <div class="timer link-danger">
+                                                    <span class="timer-fn">
+                                                      <div class="timer-fn link-danger">
                                                         02 : 17 : 05
                                                       </div>
                                                     </span>
@@ -171,7 +171,7 @@ const ViewContest = () => {
                                                 </div>
                                               </div>
                                             </div>
-                                            <div className="title-right">
+                                            <div className="title-right-fn">
                                               movies
                                             </div>
                                           </div>
