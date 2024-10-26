@@ -18,7 +18,7 @@ const PaymentMethod = () => {
   return (
     <>
       <div
-        className="Site-content"
+        className="Site-content-bg"
         style={{
           backgroundImage:
             "url('https://fanizm-prod.s3.amazonaws.com/upload/front_bg.png')",
@@ -27,8 +27,8 @@ const PaymentMethod = () => {
           backgroundRepeat: "no-repeat",
         }}
       >
-        <div className="routing-550">
-          <div className="web-body-container pb0">
+        <div className="routing-550-1">
+          <div className="web-body-container-1 pb0">
             <div className="header quiz-header">
               <div className="head-col-left"></div>
               <div className="head-col-center">
@@ -39,7 +39,7 @@ const PaymentMethod = () => {
               </div>
             </div>
 
-            <div className="default-header-placeholder"></div>
+            <div className="default-header-placeholder-fn"></div>
             <div className="burger-menu-backdrop "></div>
 
             <div className="mobile-wrap">

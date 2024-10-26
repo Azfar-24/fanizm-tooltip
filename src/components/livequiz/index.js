@@ -60,7 +60,7 @@ const LiveQuiz = () => {
         </div>
       </div>
       <div
-        className="Site-content"
+        className="Site-content-bg"
         style={{
           backgroundImage:
             "url('https://fanizm-prod.s3.amazonaws.com/upload/front_bg.png')",
@@ -69,8 +69,8 @@ const LiveQuiz = () => {
           backgroundRepeat: "no-repeat",
         }}
       >
-        <div className="routing-550">
-          <div className="web-body-container pb0">
+        <div className="routing-550-1">
+          <div className="web-body-container-1 pb0">
             <div className="header quiz-header">
               <div className="head-col-left">
                 <div className="head-col-left-icon">
@@ -160,7 +160,7 @@ const LiveQuiz = () => {
               </div>
               <div className="head-col-right">
                 <div className="head-col-right-icon">
-                  <FaQrcode className="head-action-btn icon-qr" />
+                  <FaQrcode className="head-action-btn icon-qr-fn" />
                 </div>
                 <div className=""></div>
               </div>

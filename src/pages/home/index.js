@@ -85,7 +85,7 @@ function Home() {
 
   return (
     <div
-      className="Site-content"
+      className="Site-content-bg"
       style={{
         backgroundImage:
           "url('https://fanizm-prod.s3.amazonaws.com/upload/front_bg.png')",
@@ -94,8 +94,8 @@ function Home() {
         backgroundRepeat: "no-repeat",
       }}
     >
-      <div className="routing-550">
-        <div className="web-body-container">
+      <div className="routing-550-1">
+        <div className="web-body-container-1">
           <Header />
           <div className="swiper-wrap">
             <Swiper

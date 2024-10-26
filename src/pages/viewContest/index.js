@@ -63,7 +63,7 @@ const ViewContest = () => {
         </div>
       </div>
       <div
-        className="Site-content"
+        className="Site-content-bg"
         style={{
           backgroundImage:
             "url('https://fanizm-prod.s3.amazonaws.com/upload/front_bg.png')",
@@ -72,8 +72,8 @@ const ViewContest = () => {
           backgroundRepeat: "no-repeat",
         }}
       >
-        <div className="routing-550">
-          <div className="web-body-container pb0">
+        <div className="routing-550-1">
+          <div className="web-body-container-1 pb0">
             {viewContest === 0 ? (
               <>
                 <div className="header quiz-header">
@@ -87,7 +87,7 @@ const ViewContest = () => {
                   </div>
                   <div className="head-col-right"></div>
                 </div>
-                <div className="default-header-placeholder"></div>
+                <div className="default-header-placeholder-fn"></div>
                 <div className="burger-menu-backdrop "></div>
                 <div className="mobile-wrap">
                   <div className="tabs-primary-nav ">

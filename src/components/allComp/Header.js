@@ -57,10 +57,10 @@ const Header = () => {
         </div>
 
         <div className="user-info">
-          <div className="head-right-balance">
+          <div className="head-right-balance-fn">
             <span style={{ color: "red", fontWeight: "bold" }}>₹&nbsp;</span>0
           </div>
-          <div className="head-right-balance points">
+          <div className="head-right-balance-fn points-fn">
             <span className="points-icn">
               <img
                 src="https://fanizm-prod.s3.amazonaws.com/assets/img/coins-ic.svg"
@@ -69,12 +69,12 @@ const Header = () => {
             </span>
             300
           </div>
-          <div className="head-action-btn no-bg icon-qr">
+          <div className="head-action-btn-fn no-bg icon-qr-fn">
           <FaQrcode className="header-icon" />
           </div>
         </div>
       </header>
-      <div className="default-header-placeholder"></div>
+      <div className="default-header-placeholder-fn"></div>
     </>
   );
 };

@@ -9,7 +9,7 @@ const AddFund = () => {
   return (
     <>
       <div
-        className="Site-content"
+        className="Site-content-bg"
         style={{
           backgroundImage:
             "url('https://fanizm-prod.s3.amazonaws.com/upload/front_bg.png')",
@@ -18,8 +18,8 @@ const AddFund = () => {
           backgroundRepeat: "no-repeat",
         }}
       >
-        <div className="routing-550">
-          <div className="web-body-container pb0">
+        <div className="routing-550-1">
+          <div className="web-body-container-1 pb0">
             <div className="header quiz-header">
               <div className="head-col-left">
                 <div className="head-col-left-icon">
@@ -32,12 +32,12 @@ const AddFund = () => {
               </div>
               <div className="head-col-right">
                 <div className=""></div>
-                <div className="head-right-balance">
+                <div className="head-right-balance-fn">
                   <span className="currency_code">₹</span>0
                 </div>
               </div>
             </div>
-            <div className="default-header-placeholder"></div>
+            <div className="default-header-placeholder-fn"></div>
             <div className="burger-menu-backdrop "></div>
 
             <div className="mobile-wrap">

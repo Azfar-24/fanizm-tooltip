@@ -290,8 +290,8 @@ const Footer = ({ step, setStep, active }) => {
     },
   ];
   return (
-    <div className="default-app-footer">
-      <div className="default-inner-footer">
+    <div className="default-app-footer-fn">
+      <div className="default-inner-footer-fn">
         {navBar.map((nav, index) => {
           return (
             <a
@@ -306,7 +306,7 @@ const Footer = ({ step, setStep, active }) => {
           );
         })}
       </div>
-      <div className={`footer-quiz-modes`}>
+      <div className={`footer-quiz-modes-fn`}>
         {step === 1 && <div className="footer-overlay"></div>}
         <Tippy
           content="This is a customized tooltip"
@@ -315,7 +315,7 @@ const Footer = ({ step, setStep, active }) => {
           visible={step === 1}
         >
           <a
-            className={`quiz-modes-handler ${
+            className={`quiz-modes-handler-fn ${
               step === 1 ? "highlighted-element" : ""
             }`}
             href="#"
@@ -379,9 +379,9 @@ const Footer = ({ step, setStep, active }) => {
         </Tippy>
 
         {showNevigation && (
-          <div className="quiz-modes-drawer is--open">
-            <div className="quiz-modes-backdrop"></div>
-            <div className="quiz-modes-nav">
+          <div className="quiz-modes-drawer-fn is--open">
+            <div className="quiz-modes-backdrop-fn"></div>
+            <div className="quiz-modes-nav-fn">
               {navbar.map((nav, i) => (
                 <>
                   {i === 1 ? (
@@ -392,7 +392,7 @@ const Footer = ({ step, setStep, active }) => {
                       visible={step === 2}
                     >
                       <a
-                        className="qm-nav-item mega selected active highlighted"
+                        className="qm-nav-item-fn mega selected active highlighted"
                         href="#"
                         aria-current="page"
                         onClick={() => {
@@ -420,7 +420,7 @@ const Footer = ({ step, setStep, active }) => {
                     </Tippy>
                   ) : (
                     <a
-                      className="qm-nav-item mega selected"
+                      className="qm-nav-item-fn mega selected"
                       href="#"
                       aria-current="page"
                       onClick={() => {

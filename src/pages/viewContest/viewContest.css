@@ -26,7 +26,7 @@ body {
   letter-spacing: 0.1px;
 }
 
-.routing-550 {
+.routing-550-1 {
   display: flex;
 }
 .quiz-header {
@@ -95,7 +95,7 @@ body {
   transition: all 0.3s ease-out;
   z-index: 99998;
 }
-.web-body-container {
+.web-body-container-1 {
   max-width: 550px;
   width: 100%;
   background: #0b091c;
