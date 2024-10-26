@@ -82,21 +82,21 @@ const ViewContest = () => {
                       <FaArrowLeft className="head-action-btn icon-left-arrow" />
                     </div>
                   </div>
-                  <div className="head-col-center">
+                  <div className="head-col-center-fn">
                     <span className="head-title">My Quiz Contests</span>
                   </div>
-                  <div className="head-col-right"></div>
+                  <div className="head-col-right-fn"></div>
                 </div>
                 <div className="default-header-placeholder-fn"></div>
-                <div className="burger-menu-backdrop "></div>
-                <div className="mobile-wrap">
+                <div className="burger-menu-backdrop-fn "></div>
+                <div className="mobile-wrap-fn">
                   <div className="tabs-primary-nav ">
                     <a className="select">Mega</a>
                     <a className="">One On One</a>
                   </div>
 
-                  <div className="ptr my-contest-ptr__pull-down lighten">
-                    <div className="ptr__children">
+                  <div className="ptr-fn my-contest-ptr__pull-down-fn lighten">
+                    <div className="ptr__children-fn">
                       <div className="tabs-primary">
                         <div className="clearfix row">
                           <div className="top-fixed my-contest-tab circular-tab new-tab  col-xs-12">
@@ -130,24 +130,24 @@ const ViewContest = () => {
                     </div>
                   </div>
 
-                  <div className="web-container contest-listing-web-conatiner header-margin minus-header-height bg-white contest-listing-new ML-contest-listing LQ-contest-list-view with-detail-screen">
-                    <div className="webcontainer-inner">
-                      <div className="ptr">
-                        <div className="ptr__children">
-                          <div className="container-tab-wrap show">
+                  <div className="web-container-fn contest-list-fning-web-conatiner header-margin minus-header-height bg-white contest-list-fning-new-fn ML-contest-list-fning LQ-contest-list-fn-view with-detail-screen">
+                    <div className="webcontainer-inner-fn">
+                      <div className="ptr-fn">
+                        <div className="ptr__children-fn">
+                          <div className="container-tab-wrap-fn">
                             <div className="row">
                               <div className="col-sm-12 w-100">
-                                <div className="infinite-scroll-component__outerdiv">
+                                <div className="infinite-scroll-component__outerdiv-fn">
                                   <div
-                                    className="infinite-scroll-component"
+                                    className="infinite-scroll-component-fn"
                                     style={{ height: "auto", overflow: "auto" }}
                                   >
-                                    <div className="contest-list-wrapper xmt20 mb20">
+                                    <div className="contest-list-wrapper-fn xmt20 mb20">
                                       {upcomingContest.map((contest, i) => (
-                                        <div className="contest-listing-card is-mega-contest">
-                                          <div className="rookie-contest-view title-wrap-inner d-flex">
-                                            <div className="contest-listing-card-header">
-                                              <div className="contest-right">
+                                        <div className="contest-list-fning-card is-mega-contest">
+                                          <div className="rookie-contest-view-fn title-wrap-inner d-flex">
+                                            <div className="contest-list-fning-card-header-fn">
+                                              <div className="contest-right-fn">
                                                 <div className="contest-name-heading">
                                                   Pushpa The Rise
                                                 </div>
@@ -177,11 +177,11 @@ const ViewContest = () => {
                                           </div>
                                           <div>
                                             <div
-                                              className="contest-list contest-listing-list xquiz-contest-card contest-card-body contest-box"
+                                              className="contest-list-fn contest-list-fning-list xquiz-contest-card contest-card-body contest-box"
                                               style={{ marginBottom: "20px" }}
                                             >
-                                              <div className="contest-list-header">
-                                                <div className="contest-heading">
+                                              <div className="contest-list-header-fn">
+                                                <div className="contest-heading-fn">
                                                   <h3 className="win-type">
                                                     <span className="position-relative">
                                                       <span>
@@ -262,7 +262,7 @@ const ViewContest = () => {
               <>
                 <div className="header quiz-header">
                   <div
-                    className="head-col-left"
+                    className="head-col-left-fn"
                     onClick={() => {
                       setViewContest(0);
                     }}
@@ -282,10 +282,10 @@ const ViewContest = () => {
                       </svg>
                     </div>
                   </div>
-                  <div className="head-col-center">
+                  <div className="head-col-center-fn">
                     <span className="head-title">Pushpa The Rise</span>
                   </div>
-                  <div className="head-col-right"></div>
+                  <div className="head-col-right-fn"></div>
                 </div>
                 <Tippy
                   theme="custom"
@@ -312,7 +312,7 @@ const ViewContest = () => {
               <>
                 <div className="header quiz-header">
                   <div
-                    className="head-col-left"
+                    className="head-col-left-fn"
                     onClick={() => {
                       setViewContest(1);
                     }}
@@ -332,10 +332,10 @@ const ViewContest = () => {
                       </svg>
                     </div>
                   </div>
-                  <div className="head-col-center">
+                  <div className="head-col-center-fn">
                     <span className="head-title">Pushpa The Rise</span>
                   </div>
-                  <div className="head-col-right"></div>
+                  <div className="head-col-right-fn"></div>
                 </div>{" "}
                 <div
                   className="overlay__pyt-img "
@@ -424,7 +424,7 @@ const ViewContest = () => {
               <>
                 <div className="header quiz-header">
                   <div
-                    className="head-col-left"
+                    className="head-col-left-fn"
                     onClick={() => {
                       setViewContest(2);
                     }}
@@ -444,10 +444,10 @@ const ViewContest = () => {
                       </svg>
                     </div>
                   </div>
-                  <div className="head-col-center">
+                  <div className="head-col-center-fn">
                     <span className="head-title">Pushpa The Rise</span>
                   </div>
-                  <div className="head-col-right"></div>
+                  <div className="head-col-right-fn"></div>
                 </div>
                 <div className="overlay__pyt-img ">
                   <div className="practice-contest__container">
@@ -531,7 +531,7 @@ const ViewContest = () => {
               <>
                 <div className="header quiz-header">
                   <div
-                    className="head-col-left"
+                    className="head-col-left-fn"
                     onClick={() => {
                       setViewContest(3);
                     }}
@@ -551,10 +551,10 @@ const ViewContest = () => {
                       </svg>
                     </div>
                   </div>
-                  <div className="head-col-center">
+                  <div className="head-col-center-fn">
                     <span className="head-title">Pushpa The Rise</span>
                   </div>
-                  <div className="head-col-right"></div>
+                  <div className="head-col-right-fn"></div>
                 </div>
                 <div className="overlay__pyt-img ">
                   <div className="practice-contest__container">
@@ -640,7 +640,7 @@ const ViewContest = () => {
               <>
                 <div className="header quiz-header">
                   <div
-                    className="head-col-left"
+                    className="head-col-left-fn"
                     onClick={() => {
                       setViewContest(4);
                     }}
@@ -660,10 +660,10 @@ const ViewContest = () => {
                       </svg>
                     </div>
                   </div>
-                  <div className="head-col-center">
+                  <div className="head-col-center-fn">
                     <span className="head-title">Pushpa The Rise</span>
                   </div>
-                  <div className="head-col-right"></div>
+                  <div className="head-col-right-fn"></div>
                 </div>
                 <div className="overlay__pyt-img ">
                   <div className="practice-contest__container">
@@ -754,7 +754,7 @@ const ViewContest = () => {
                 <div class="container">
                   <div className="header quiz-header">
                     <div
-                      className="head-col-left"
+                      className="head-col-left-fn"
                       onClick={() => {
                         setViewContest(5);
                       }}
@@ -774,10 +774,10 @@ const ViewContest = () => {
                         </svg>
                       </div>
                     </div>
-                    <div className="head-col-center">
+                    <div className="head-col-center-fn">
                       <span className="head-title">Pushpa The Rise</span>
                     </div>
-                    <div className="head-col-right"></div>
+                    <div className="head-col-right-fn"></div>
                   </div>
                   <div class="kudos">
                     <div class="kudos-circle">

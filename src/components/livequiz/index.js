@@ -72,13 +72,13 @@ const LiveQuiz = () => {
         <div className="routing-550-1">
           <div className="web-body-container-1 pb0">
             <div className="header quiz-header">
-              <div className="head-col-left">
+              <div className="head-col-left-fn">
                 <div className="head-col-left-icon">
                   <FaArrowLeft className="head-action-btn icon-left-arrow" />
                 </div>
               </div>
-              <div className="head-col-center">
-                <div className="head-logo">
+              <div className="head-col-center-fn">
+                <div className="head-logo-fn">
                   <svg
                     width="95.3178932px"
                     height="51.1884258px"
@@ -154,59 +154,59 @@ const LiveQuiz = () => {
                     </g>
                   </svg>
                 </div>
-                <span className="head-subtitle">
+                <span className="head-subtitle-fn">
                   Win Prizes |<span className="timer">20 Oct - 01:00 PM</span>
                 </span>
               </div>
-              <div className="head-col-right">
+              <div className="head-col-right-fn">
                 <div className="head-col-right-icon">
                   <FaQrcode className="head-action-btn icon-qr-fn" />
                 </div>
                 <div className=""></div>
               </div>
             </div>
-            <div className="burger-menu-backdrop "></div>
+            <div className="burger-menu-backdrop-fn "></div>
             {/* main sections */}
-            <div className="mobile-wrap">
-              <div className="web-container contest-listing-web-conatiner header-margin minus-header-height bg-white contest-listing-new ML-contest-listing LQ-contest-list-view with-detail-screen">
-                <div className="webcontainer-inner">
-                  <div className="ptr">
-                    <div className="ptr__pull-down">
-                      <div className="ptr__loader ptr__pull-down--loading">
-                        <div className="lds-ellipsis">
+            <div className="mobile-wrap-fn">
+              <div className="web-container-fn contest-listing-web-conatiner header-margin minus-header-height bg-white contest-listing-new-fn ML-contest-listing LQ-contest-list-view with-detail-screen">
+                <div className="webcontainer-inner-fn">
+                  <div className="ptr-fn">
+                    <div className="ptr__pull-down-fn">
+                      <div className="ptr__loader-fn ptr__pull-down--loading-fn">
+                        <div className="lds-ellipsis-fn">
                           <div></div>
                           <div></div>
                           <div></div>
                           <div></div>
                         </div>
                       </div>
-                      <div className="ptr__pull-down--pull-more"></div>
+                      <div className="ptr__pull-down--pull-more-fn"></div>
                     </div>
-                    <div className="ptr__children">
-                      <div className="container-tab-wrap show show">
-                        <div className="lqquizdetails is_fade">
-                          <div className="quiz-banner">
+                    <div className="ptr__children-fn">
+                      <div className="container-tab-wrap-fn">
+                        <div className="lqquizdetails-fn">
+                          <div className="quiz-banner-fn">
                             {imageUrl && (
                               <img
                                 src={coverImg ? coverImg : imageUrl}
                                 alt="Quiz"
-                                className="quiz-image"
+                                className="quiz-image-fn"
                               />
                             )}
 
-                            <div className="img-border"></div>
+                            <div className="img-border-fn"></div>
                           </div>
-                          <div className="quiz-subtitle">
+                          <div className="quiz-subtitle-fn">
                             <span className="rules-modal-trigger">
                               <i className="icon-rules-edit"></i>Rules
                             </span>
                             {title}
-                            <span className="more-detals-trigger  ">
+                            <span className="more-detals-trigger-fn  ">
                               Read more..
                             </span>
                           </div>
-                          <div className="quiz-content-box sm">
-                            <div className="quiz-content-heading">
+                          <div className="quiz-content-box-fn sm">
+                            <div className="quiz-content-heading-fn">
                               Quiz Available in -
                               <p>
                                 <span>English</span>
@@ -215,8 +215,8 @@ const LiveQuiz = () => {
                           </div>
                         </div>
                       </div>
-                      <div className="container-tab-wrap show">
-                        <div className="tab-group live-quiz-tab">
+                      <div className="container-tab-wrap-fn">
+                        <div className="tab-group-fn live-quiz-tab-fn">
                           <ul>
                             {contestTab.map((tab) => (
                               <li
@@ -234,23 +234,23 @@ const LiveQuiz = () => {
                         </div>
                         <div className="row">
                           <div className="col-sm-12 w-100">
-                            <div className="infinite-scroll-component__outerdiv">
+                            <div className="infinite-scroll-component__outerdiv-fn">
                               <div
-                                className="infinite-scroll-component"
+                                className="infinite-scroll-component-fn"
                                 style={{ height: "auto", overflow: "auto" }}
                               >
                                 {activeTab === 1 && (
-                                  <div className="contest-list-wrapper xmt20 mb20">
+                                  <div className="contest-list-wrapper-fn xmt20 mb20">
                                     {upcomingContest.map((contest, i) => (
                                       <div className="contest-listing-card is-mega-contest">
-                                        <div className="rookie-contest-view">
-                                          <div className="contest-listing-card-header">
+                                        <div className="rookie-contest-view-fn">
+                                          <div className="contest-listing-card-header-fn">
                                             <img
                                               src="https://fanizm-prod.s3.amazonaws.com/assets/img/1711275142.jpeg"
                                               alt=""
                                               className="contest-img"
                                             />
-                                            <div className="contest-right">
+                                            <div className="contest-right-fn">
                                               <div className="contest-name-heading">
                                                 {contest.contestType}
                                               </div>
@@ -261,9 +261,9 @@ const LiveQuiz = () => {
                                           </div>
                                         </div>
                                         <div>
-                                          <div className="contest-list contest-listing-list xquiz-contest-card contest-card-body">
-                                            <div className="contest-list-header">
-                                              <div className="contest-heading">
+                                          <div className="contest-list-fn contest-listing-list xquiz-contest-card contest-card-body">
+                                            <div className="contest-list-header-fn">
+                                              <div className="contest-heading-fn">
                                                 <h3 className="win-type">
                                                   <span className="position-relative">
                                                     <span>{contest.type}</span>
@@ -363,16 +363,16 @@ const LiveQuiz = () => {
                                   </div>
                                 )}
                                 {activeTab === 2 && (
-                                  <div className="contest-list-wrapper xmt20 mb20">
+                                  <div className="contest-list-wrapper-fn xmt20 mb20">
                                     <div className="contest-listing-card is-mega-contest">
-                                      <div className="rookie-contest-view">
-                                        <div className="contest-listing-card-header">
+                                      <div className="rookie-contest-view-fn">
+                                        <div className="contest-listing-card-header-fn">
                                           <img
                                             src="https://fanizm-prod.s3.amazonaws.com/assets/img/1711275142.jpeg"
                                             alt=""
                                             className="contest-img"
                                           />
-                                          <div className="contest-right">
+                                          <div className="contest-right-fn">
                                             <div className="contest-name-heading">
                                               HEAD TO HEAD
                                             </div>
@@ -383,9 +383,9 @@ const LiveQuiz = () => {
                                         </div>
                                       </div>
                                       <div>
-                                        <div className="contest-list contest-listing-list xquiz-contest-card contest-card-body">
-                                          <div className="contest-list-header">
-                                            <div className="contest-heading">
+                                        <div className="contest-list-fn contest-listing-list xquiz-contest-card contest-card-body">
+                                          <div className="contest-list-header-fn">
+                                            <div className="contest-heading-fn">
                                               <div className="featured-icon-wrap">
                                                 <span className="featured-icon new-featured-icon gau-feat">
                                                   <i className="icon-checked"></i>{" "}

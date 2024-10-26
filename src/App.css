@@ -1008,7 +1008,7 @@ a.quiz-modes-handler-fn.highlighted-element:before {
   display: flex;
   z-index: 99999;
 }
-.web-container.web-container-fixed {
+.web-container-fn.web-container-fixed {
   overflow: hidden;
   padding-top: 0;
   padding-bottom: 50px;
@@ -1017,7 +1017,7 @@ a.quiz-modes-handler-fn.highlighted-element:before {
 .web-body-container-1.pb0 .web-container {
   min-height: calc(100vh - 56px);
 }
-.web-container {
+.web-container-fn {
   max-width: 550px;
   min-height: 100vh;
   padding-bottom: 60px;

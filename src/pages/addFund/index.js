@@ -21,16 +21,16 @@ const AddFund = () => {
         <div className="routing-550-1">
           <div className="web-body-container-1 pb0">
             <div className="header quiz-header">
-              <div className="head-col-left">
+              <div className="head-col-left-fn">
                 <div className="head-col-left-icon">
                   <FaArrowLeft className="head-action-btn icon-left-arrow" />
                 </div>
               </div>
 
-              <div className="head-col-center">
+              <div className="head-col-center-fn">
                 <span className="head-title">Add Funds</span>
               </div>
-              <div className="head-col-right">
+              <div className="head-col-right-fn">
                 <div className=""></div>
                 <div className="head-right-balance-fn">
                   <span className="currency_code">₹</span>0
@@ -38,10 +38,10 @@ const AddFund = () => {
               </div>
             </div>
             <div className="default-header-placeholder-fn"></div>
-            <div className="burger-menu-backdrop "></div>
+            <div className="burger-menu-backdrop-fn "></div>
 
-            <div className="mobile-wrap">
-              <div className="web-container web-container-fixed add-funds-wrapper xwhite-bg">
+            <div className="mobile-wrap-fn">
+              <div className="web-container-fn web-container-fixed add-funds-wrapper xwhite-bg">
                 <div className="add-funds-header">
                   <div>
                     <div className="position-relative show-currency-icn overlay-fixed-view  form-group">

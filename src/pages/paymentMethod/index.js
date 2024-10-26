@@ -30,20 +30,20 @@ const PaymentMethod = () => {
         <div className="routing-550-1">
           <div className="web-body-container-1 pb0">
             <div className="header quiz-header">
-              <div className="head-col-left"></div>
-              <div className="head-col-center">
+              <div className="head-col-left-fn"></div>
+              <div className="head-col-center-fn">
                 <span className="head-title">Select Payment Method</span>
               </div>
-              <div className="head-col-right">
+              <div className="head-col-right-fn">
                 <div className=""></div>
               </div>
             </div>
 
             <div className="default-header-placeholder-fn"></div>
-            <div className="burger-menu-backdrop "></div>
+            <div className="burger-menu-backdrop-fn "></div>
 
-            <div className="mobile-wrap">
-              <div className="web-container web-container-fixed trans-web-container pay-method-wrap">
+            <div className="mobile-wrap-fn">
+              <div className="web-container-fn web-container-fixed trans-web-container pay-method-wrap">
                 <div className="row">
                   <div className="col-sm-12">
                     <div className="payable-amt">
