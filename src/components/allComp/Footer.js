@@ -330,7 +330,9 @@ const Footer = ({ step, setStep, active, flag }) => {
         })}
       </div>
       <div className={`footer-quiz-modes-fn`}>
-        {step === 1 && step !== "end" && <div className="footer-overlay"></div>}
+        {(step === 1 || step === 2) && step !== "end" && (
+          <div className="footer-overlay"></div>
+        )}
         {/* <Tippy
           content="check this out"
           theme="custom"

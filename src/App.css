@@ -1915,3 +1915,63 @@ circle {
   font-size: 30px;
   font-weight: 600;
 }
+
+.dropdown-container {
+  position: relative;
+  width: 200px;
+  font-family: Arial, sans-serif;
+  margin: 10px 5px;
+}
+
+.dropdown-header {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  background-color: #2864b0;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dropdown-arrow {
+  margin-left: auto;
+}
+
+.dropdown-list {
+  list-style: none;
+  padding: 0;
+  margin: 5px 0 0;
+  background-color: #2864b0;
+  border-radius: 5px;
+  overflow: hidden;
+  color: white;
+  position: absolute;
+  width: 100%;
+  z-index: 1000;
+}
+
+.dropdown-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer;
+  
+}
+
+.dropdown-item input[type="radio"] {
+  margin-right: 10px;
+  accent-color: red;
+}
+
+.dropdown-item label {
+  cursor: pointer;
+  color: white;
+}
+
+.dropdown-item:hover {
+  background-color: #204478;
+}

@@ -6,6 +6,7 @@ import { FaArrowLeft, FaShare, FaTrophy } from "react-icons/fa";
 import Footer from "../../components/allComp/Footer";
 import { useNavigate } from "react-router-dom";
 import CircularProgress from "../../components/allComp/CircularProgress";
+import Dropdown from "../../components/allComp/Dropdown";
 
 const ViewContest = () => {
   const nevigate = useNavigate();
@@ -307,6 +308,36 @@ const ViewContest = () => {
                   content={
                     "Choose the language you vibed with when you watched and the one you’ll slay gameplay in!"
                   }
+                  placement="top"
+                >
+                  <div className="highlighted" style={{ display: "flex" }}>
+                    <Dropdown
+                      languages={[
+                        "Hindi",
+                        "English",
+                        "Telugu",
+                        "Bengali",
+                        "Tamil",
+                        "Kannada",
+                        "Malayalam",
+                      ]}
+                      type={"English"}
+                    />
+                    <Dropdown
+                      type={"Play Quiz In"}
+                      languages={["हिंदी", "English"]}
+                      setViewContest={setViewContest}
+                    />
+                  </div>
+                </Tippy>
+
+                {/* <Tippy
+                  theme="custom"
+                  animation="fade"
+                  visible={true}
+                  content={
+                    "Choose the language you vibed with when you watched and the one you’ll slay gameplay in!"
+                  }
                   placement="bottom"
                 >
                   <div
@@ -318,7 +349,7 @@ const ViewContest = () => {
                     <button className="button left">Language</button>
                     <button className="button right">English</button>
                   </div>
-                </Tippy>
+                </Tippy> */}
               </>
             ) : viewContest === 2 ? (
               <>
