@@ -155,7 +155,8 @@ const LiveQuiz = () => {
                   </svg>
                 </div>
                 <span className="head-subtitle-fn">
-                  Win Prizes |<span className="timer-fn">20 Oct - 01:00 PM</span>
+                  Win Prizes |
+                  <span className="timer-fn">20 Oct - 01:00 PM</span>
                 </span>
               </div>
               <div className="head-col-right-fn">
@@ -274,47 +275,50 @@ const LiveQuiz = () => {
                                                   <div className="prize-pool-l-fn">
                                                     {contest.heading}
                                                   </div>
-                                                  <Tippy
-                                                    key={i} // Unique id for Tippy
-                                                    theme="custom"
-                                                    animation="fade"
-                                                    visible={true}
-                                                    content={
-                                                      "This is a highlighted movie!"
-                                                    }
-                                                    disabled={
-                                                      i === 1 ||
-                                                      joinContestOverlay
-                                                    } // Disable tooltip when not highlighted
+
+                                                  <div
+                                                    className={`display-table-cell v-mid position-relative entry-criteria `}
+                                                    style={{
+                                                      zIndex:
+                                                        i === 0 ? "100" : null,
+                                                    }}
                                                   >
-                                                    <div
-                                                      className={`display-table-cell v-mid position-relative entry-criteria `}
-                                                      style={{
-                                                        zIndex:
-                                                          i === 0
-                                                            ? "100"
-                                                            : null,
-                                                      }}
+                                                    <span className="entry-txt">
+                                                      {contest.entry}{" "}
+                                                    </span>{" "}
+                                                    <Tippy
+                                                      key={i} // Unique id for Tippy
+                                                      theme="custom"
+                                                      animation="fade"
+                                                      visible={true}
+                                                      content={
+                                                        "This is a highlighted movie!"
+                                                      }
+                                                      disabled={
+                                                        i === 1 ||
+                                                        joinContestOverlay
+                                                      } // Disable tooltip when not highlighted
                                                     >
-                                                      <span className="entry-txt">
-                                                        {contest.entry}{" "}
-                                                      </span>{" "}
                                                       <button
                                                         type="button"
-                                                        className={`white-base btnStyle btn-rounded btn btn-primary ${
+                                                        className={`white-base btnStyle btn-rounded btn btn-primary  ${
                                                           i === 0 &&
                                                           !joinContestOverlay
-                                                            ? "highlighted"
+                                                            ? ""
                                                             : ""
                                                         }`}
+                                                        style={{
+                                                          border:
+                                                            "2px solid white",
+                                                        }}
                                                         onClick={() =>
                                                           handleJoinContestOverlay()
                                                         }
                                                       >
                                                         {contest.buttonType}
                                                       </button>
-                                                    </div>
-                                                  </Tippy>
+                                                    </Tippy>
+                                                  </div>
                                                 </div>
                                               </div>
                                               <div className="display-table d-flex top-btm-10px">
@@ -400,7 +404,6 @@ const LiveQuiz = () => {
                                               </h3>
                                               <div className="max-prize-pool-fn pool-with-prize-r">
                                                 <div className="prize-pool-l-fn">
-                                                 
                                                   Practise Contest
                                                 </div>
                                                 <div className="display-table-cell v-mid position-relative entry-criteria">

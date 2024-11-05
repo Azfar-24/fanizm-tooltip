@@ -106,7 +106,10 @@ const ViewContest = () => {
                                   Upcoming
                                 </a>
                               </li>
-                              <li role="presentation" className="live-contest-fn ">
+                              <li
+                                role="presentation"
+                                className="live-contest-fn "
+                              >
                                 <a role="button" href="#">
                                   <span className="live-highlight-fn">
                                     <img
@@ -287,6 +290,10 @@ const ViewContest = () => {
                   </div>
                   <div className="head-col-right-fn"></div>
                 </div>
+
+                <div className="overlay__pyt-img">
+                  <img src="images/view-contest.jpg" alt="qr" />
+                </div>
                 <Tippy
                   theme="custom"
                   animation="fade"
@@ -295,18 +302,15 @@ const ViewContest = () => {
                   placement="bottom"
                 >
                   <div
-                    className="overlay__pyt-img highlighted"
+                    className="button-group quiz-lang-header highlighted"
                     onClick={() => {
                       setViewContest(2);
                     }}
                   >
-                    <img src="images/view-contest.jpg" alt="qr" />
+                    <button className="button left">Language</button>
+                    <button className="button right">English</button>
                   </div>
                 </Tippy>
-                <div className="button-group quiz-lang-header">
-                  <button className="button left">Language</button>
-                  <button className="button right">English</button>
-                </div>
               </>
             ) : viewContest === 2 ? (
               <>
@@ -719,10 +723,12 @@ const ViewContest = () => {
                       visible={true}
                       content={"This is a highlighted movie!"}
                     >
-                      <div class="practice-contest__qus-list ">
+                      <div
+                        class="practice-contest__qus-list highlighted"
+                        onClick={() => setViewContest(6)}
+                      >
                         <div
-                          class="practice-contest__qus-item selected wrong highlighted"
-                          onClick={() => setViewContest(6)}
+                          class="practice-contest__qus-item selected wrong "
                           style={{ border: "none" }}
                         >
                           <span>Bomb</span>
@@ -823,6 +829,22 @@ const ViewContest = () => {
                     </a>
                   </div>
                   <div class="total-points">
+                    {/* <Tippy
+                      theme="custom"
+                      animation="fade"
+                      visible={true}
+                      content={"This is a highlighted movie!"}
+                      placement="top"
+                    > */}
+                    <div
+                      className="result-button "
+                      onClick={() => nevigate("/")}
+                    >
+                      Total Points: <span>10.00</span>
+                    </div>
+                    {/* </Tippy> */}
+                  </div>
+                  <div class="total-points">
                     <Tippy
                       theme="custom"
                       animation="fade"
@@ -834,7 +856,8 @@ const ViewContest = () => {
                         className="result-button highlighted"
                         onClick={() => nevigate("/")}
                       >
-                        Total Points: <span>10.00</span>
+                        {/* Total Points: <span>10.00</span> */}
+                        Play Now
                       </div>
                     </Tippy>
                   </div>
