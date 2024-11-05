@@ -229,7 +229,7 @@ const ViewContest = () => {
                                                     animation="fade"
                                                     visible={true}
                                                     content={
-                                                      "This is a highlighted movie!"
+                                                      "Peep all your contests here. The hype is real!"
                                                     }
                                                   >
                                                     <div
@@ -292,13 +292,21 @@ const ViewContest = () => {
                 </div>
 
                 <div className="overlay__pyt-img">
+                  <div align="center" style={{ marginTop: "20px" }}>
+                    <h4>
+                      Welcome to the game lobby! Get hyped and wait for that
+                      countdown!
+                    </h4>
+                  </div>
                   <img src="images/view-contest.jpg" alt="qr" />
                 </div>
                 <Tippy
                   theme="custom"
                   animation="fade"
                   visible={true}
-                  content={"This is a highlighted movie!"}
+                  content={
+                    "Choose the language you vibed with when you watched and the one you’ll slay gameplay in!"
+                  }
                   placement="bottom"
                 >
                   <div
@@ -398,7 +406,9 @@ const ViewContest = () => {
                         theme="custom"
                         animation="fade"
                         visible={true}
-                        content={"This is a highlighted movie!"}
+                        content={
+                          "Time to flex! Pick the answer you’re feelin’ most."
+                        }
                       >
                         <div
                           class="practice-contest__qus-item selected"
@@ -509,7 +519,7 @@ const ViewContest = () => {
                         theme="custom"
                         animation="fade"
                         visible={true}
-                        content={"This is a highlighted movie!"}
+                        content={"Yass! You got it right! Totally crushed it!"}
                       >
                         <div
                           class="practice-contest__qus-item correct"
@@ -619,7 +629,9 @@ const ViewContest = () => {
                         theme="custom"
                         animation="fade"
                         visible={true}
-                        content={"This is a highlighted movie!"}
+                        content={
+                          "Oof, that’s tough! But hey, shake it off and come back stronger!"
+                        }
                       >
                         <div
                           class="practice-contest__qus-item selected"
@@ -725,7 +737,9 @@ const ViewContest = () => {
                       theme="custom"
                       animation="fade"
                       visible={true}
-                      content={"This is a highlighted movie!"}
+                      content={
+                        "Sheesh! Look at that score! Absolute legend vibes!"
+                      }
                     >
                       <div
                         class="practice-contest__qus-list highlighted"
@@ -836,7 +850,7 @@ const ViewContest = () => {
                     {/* <Tippy
                       theme="custom"
                       animation="fade"
-                      visible={true}
+                      visible={ step !=="end" && true}
                       content={"This is a highlighted movie!"}
                       placement="top"
                     > */}
@@ -853,7 +867,7 @@ const ViewContest = () => {
                       theme="custom"
                       animation="fade"
                       visible={true}
-                      content={"This is a highlighted movie!"}
+                      content={"You’re ready to roll! Be a champ!"}
                       placement="top"
                     >
                       <div
