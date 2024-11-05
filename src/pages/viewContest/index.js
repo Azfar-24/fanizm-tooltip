@@ -259,7 +259,7 @@ const ViewContest = () => {
                     </div>
                   </div>
                 </div>
-                <Footer active={1} />
+                <Footer active={1} flag={true} />
               </>
             ) : viewContest === 1 ? (
               <>

@@ -3,7 +3,7 @@ import { FaHome, FaBell, FaTrophy, FaGift, FaClock } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import Tippy from "@tippyjs/react";
 
-const Footer = ({ step, setStep, active }) => {
+const Footer = ({ step, setStep, active, flag }) => {
   const navigate = useNavigate();
   const [showNevigation, setShowNevigation] = useState(false);
   const [navId, setnavId] = useState(1);
@@ -294,15 +294,38 @@ const Footer = ({ step, setStep, active }) => {
       <div className="default-inner-footer-fn">
         {navBar.map((nav, index) => {
           return (
-            <a
-              className={`footer-item ${index === active ? "active" : ""}`}
-              href="#"
-            >
-              {nav.icon}
-              <div className="footer-label">
-                <span>{nav.label}</span>
-              </div>
-            </a>
+            <>
+              {flag && index == 1 ? (
+                <Tippy
+                  content="See all your contest here"
+                  theme="custom"
+                  animation="fade"
+                  visible={true}
+                >
+                  <a
+                    className={`footer-item ${
+                      index === active ? "active" : ""
+                    }`}
+                    href="#"
+                  >
+                    {nav.icon}
+                    <div className="footer-label">
+                      <span>{nav.label}</span>
+                    </div>
+                  </a>
+                </Tippy>
+              ) : (
+                <a
+                  className={`footer-item ${index === active ? "active" : ""}`}
+                  href="#"
+                >
+                  {nav.icon}
+                  <div className="footer-label">
+                    <span>{nav.label}</span>
+                  </div>
+                </a>
+              )}
+            </>
           );
         })}
       </div>
