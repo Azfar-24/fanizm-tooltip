@@ -20,9 +20,9 @@ const MovieSection = ({
   };
 
   const tabs = [
-    { id: "tab3", label: "All Modes", content: "Content for Tab 1" },
-    { id: "tab1", label: "Mega", content: "Content for Tab 2" },
-    { id: "tab2", label: "H2H", content: "Content for Tab 3" },
+    { id: "tab1", label: "All Modes", content: "Content for Tab 1" },
+    { id: "tab2", label: "Mega", content: "Content for Tab 2" },
+    { id: "tab3", label: "H2H", content: "Content for Tab 3" },
     { id: "tab4", label: "Trivia", content: "Content for Tab 4" },
   ];
   return (
@@ -31,7 +31,7 @@ const MovieSection = ({
         {showFilter ? (
           <>
             <div className="tabs-wrap">
-              <Tabs tabs={tabs} />
+              <Tabs tabs={tabs} setStep={setStep} step={step} />
             </div>
             <div className="filter-wrap">
               <FilterDropdown
@@ -56,7 +56,7 @@ const MovieSection = ({
                 key={movie.id} // Unique id for Tippy
                 theme="custom"
                 animation="fade"
-                visible={true}
+                visible={step !== "end" && true}
                 content={
                   isHighlighted
                     ? "Pick your quiz, bestie! We all know Pushpa’s the GOAT ;)"

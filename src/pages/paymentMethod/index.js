@@ -86,7 +86,7 @@ const PaymentMethod = () => {
                           <Tippy
                             theme="custom"
                             animation="fade"
-                            visible={true}
+                            visible={step !== "end" && true}
                             content={"This is a highlighted movie!"}
                             placement="top"
                           >
@@ -104,7 +104,7 @@ const PaymentMethod = () => {
                           <Tippy
                             theme="custom"
                             animation="fade"
-                            visible={true}
+                            visible={step !== "end" && true}
                             content={"This is a highlighted movie!"}
                             placement="top"
                           >

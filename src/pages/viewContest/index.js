@@ -292,6 +292,12 @@ const ViewContest = () => {
                 </div>
 
                 <div className="overlay__pyt-img">
+                  <div align="center" style={{ marginTop: "20px" }}>
+                    <h4>
+                      Welcome to the game lobby! Get hyped and wait for that
+                      countdown!
+                    </h4>
+                  </div>
                   <img src="images/view-contest.jpg" alt="qr" />
                 </div>
                 <Tippy
@@ -299,7 +305,7 @@ const ViewContest = () => {
                   animation="fade"
                   visible={true}
                   content={
-                    "Choose the language you vibed with when you watched and the one you’ll slay gameplay in! On top center - Welcome to the game lobby! Get hyped and wait for that countdown!"
+                    "Choose the language you vibed with when you watched and the one you’ll slay gameplay in!"
                   }
                   placement="bottom"
                 >
@@ -844,7 +850,7 @@ const ViewContest = () => {
                     {/* <Tippy
                       theme="custom"
                       animation="fade"
-                      visible={true}
+                      visible={ step !=="end" && true}
                       content={"This is a highlighted movie!"}
                       placement="top"
                     > */}

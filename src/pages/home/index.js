@@ -97,6 +97,22 @@ function Home() {
       <div className="routing-550-1">
         <div className="web-body-container-1">
           <Header />
+          <div>
+            <h3 align="center">This is your guided gameplay.</h3>
+          </div>
+          {Number(step) && (
+            <div
+              style={{
+                textAlign: "left",
+                zIndex: 10000,
+                position: "relative",
+                display: "flex",
+                justifyContent: "flex-end",
+              }}
+            >
+              <button onClick={() => setStep("end")}>skip</button>
+            </div>
+          )}
           <div className="swiper-wrap">
             <Swiper
               modules={[Autoplay]}
@@ -143,7 +159,7 @@ function Home() {
             movies={movies}
             step={step}
             setStep={setStep}
-            isHighlight={step === 3}
+            isHighlight={step === 3 && step !== "end"}
             showFilter={true}
           />
           <MovieSection
@@ -151,7 +167,7 @@ function Home() {
             movies={trailers}
             step={0}
             setStep={setStep}
-            isHighlight={step === 3}
+            isHighlight={step === 3 && step !== "end"}
           />
 
           {/* Footer */}

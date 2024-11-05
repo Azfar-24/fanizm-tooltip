@@ -48,7 +48,7 @@ const Overlay = ({ handleJoinContestOverlay, quizData }) => {
                 <div className="confirm-quiz-heading">
                   <div className="quiz-name">{quizData.title}</div>
                   <div className="winning-amt">
-                    <span>H2H</span>
+                    <span>Mega</span>
                   </div>
                 </div>
               </div>
