@@ -72,7 +72,7 @@ const Overlay = ({ handleJoinContestOverlay, quizData }) => {
                 </div>
               </div>
             </div>
-            <div className="p-0 row">
+            {/* <div className="p-0 row">
               <div className="col-xs-12">
                 <div className="fee-container">
                   <div className="lable-text">Joining Amount</div>
@@ -96,7 +96,7 @@ const Overlay = ({ handleJoinContestOverlay, quizData }) => {
                   </a>
                 </div>
               </div>
-            </div>
+            </div> */}
             <div className="p-0 row">
               <div className="p-0 col-xs-12">
                 <div className="amount-subtext amount-subtext-font10 mb-0">
@@ -124,11 +124,12 @@ const Overlay = ({ handleJoinContestOverlay, quizData }) => {
               <a
                 className="joinContestConfirm single-text highlighted"
                 onClick={() => {
-                  navigate("/add-fund");
+                  // navigate("/add-fund");
+                  navigate("/view-contest");
                 }}
                 style={{ zIndex: 10 }}
               >
-                Add Funds & Join Contest
+                Join Contest
               </a>
             </Tippy>
           </div>

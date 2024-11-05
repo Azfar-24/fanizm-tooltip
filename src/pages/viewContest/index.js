@@ -385,7 +385,8 @@ const ViewContest = () => {
                     </div>
 
                     <div className="practice-contest__qus-heading">
-                      <span>What was Shekhawat's designation?????</span>
+                      {/* <span>What was Shekhawat's designation?????</span> */}
+                      <span>Who is the main lead in the movie Pushpa?</span>
                     </div>
 
                     <div className="practice-contest__progBar">
@@ -403,17 +404,21 @@ const ViewContest = () => {
                           class="practice-contest__qus-item selected"
                           onClick={() => setViewContest(3)}
                         >
-                          <span>SP</span>
+                          {/* <span>SP</span> */}
+                          <span>Allu Arjun</span>
                         </div>
                       </Tippy>
                       <div class="practice-contest__qus-item">
-                        <span>DSP</span>
+                        {/* <span>DSP</span> */}
+                        <span>Ram Charan</span>
                       </div>
                       <div class="practice-contest__qus-item">
-                        <span>ACP</span>
+                        {/* <span>ACP</span> */}
+                        <span>Prabhas</span>
                       </div>
                       <div class="practice-contest__qus-item">
-                        <span>IPS</span>
+                        {/* <span>IPS</span> */}
+                        <span>Vijay Deverakonda</span>
                       </div>
                       <div class="quiz-overlay"></div>
                     </div>
@@ -492,7 +497,7 @@ const ViewContest = () => {
                     </div>
 
                     <div className="practice-contest__qus-heading">
-                      <span>What was Shekhawat's designation?????</span>
+                      <span>Who is the main lead in the movie Pushpa?</span>
                     </div>
 
                     <div className="practice-contest__progBar">
@@ -510,17 +515,17 @@ const ViewContest = () => {
                           class="practice-contest__qus-item correct"
                           onClick={() => setViewContest(4)}
                         >
-                          <span>SP</span>
+                          <span>Allu Arjun</span>
                         </div>
                       </Tippy>
                       <div class="practice-contest__qus-item">
-                        <span>DSP</span>
+                        <span>Ram Charan</span>
                       </div>
                       <div class="practice-contest__qus-item">
-                        <span>ACP</span>
+                        <span>Prabhas</span>
                       </div>
                       <div class="practice-contest__qus-item">
-                        <span>IPS</span>
+                        <span>Vijay Deverakonda</span>
                       </div>
                       <div class="quiz-overlay"></div>
                     </div>
@@ -600,7 +605,8 @@ const ViewContest = () => {
 
                     <div className="practice-contest__qus-heading">
                       <span>
-                        What caused Konda Readdy to loose his hand?????
+                        {/* What caused Konda Readdy to loose his hand????? */}
+                        What rare wood was mentioned?
                       </span>
                     </div>
 
@@ -619,14 +625,14 @@ const ViewContest = () => {
                           class="practice-contest__qus-item selected"
                           onClick={() => setViewContest(5)}
                         >
-                          <span>Bomb</span>
+                          <span>Vietnamese Rosewood</span>
                         </div>
                       </Tippy>
                       <div class="practice-contest__qus-item">
-                        <span>Axe</span>
+                        <span>Brazilian Rosewood</span>
                       </div>
                       <div class="practice-contest__qus-item">
-                        <span>Bullet</span>
+                        <span>Red Sandalwood</span>
                       </div>
                       <div class="practice-contest__qus-item">
                         <span>None of the above</span>
@@ -708,9 +714,7 @@ const ViewContest = () => {
                     </div>
 
                     <div className="practice-contest__qus-heading">
-                      <span>
-                        What caused Konda Readdy to loose his hand?????
-                      </span>
+                      <span>What rare wood was mentioned?</span>
                     </div>
 
                     <div className="practice-contest__progBar">
@@ -731,16 +735,16 @@ const ViewContest = () => {
                           class="practice-contest__qus-item selected wrong "
                           style={{ border: "none" }}
                         >
-                          <span>Bomb</span>
+                          <span>Vietnamese Rosewood</span>
                         </div>
                         <div
                           class="practice-contest__qus-item correct"
                           style={{ border: "none" }}
                         >
-                          <span>Axe</span>
+                          <span>Brazilian Rosewood</span>
                         </div>
                         <div class="practice-contest__qus-item">
-                          <span>Bullet</span>
+                          <span>Red Sandalwood</span>
                         </div>
                         <div class="practice-contest__qus-item">
                           <span>None of the above</span>

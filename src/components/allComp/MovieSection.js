@@ -20,9 +20,10 @@ const MovieSection = ({
   };
 
   const tabs = [
-    { id: "tab1", label: "Mega", content: "Content for Tab 1" },
-    { id: "tab2", label: "H2H", content: "Content for Tab 2" },
-    { id: "tab3", label: "All Modes", content: "Content for Tab 3" },
+    { id: "tab3", label: "All Modes", content: "Content for Tab 1" },
+    { id: "tab1", label: "Mega", content: "Content for Tab 2" },
+    { id: "tab2", label: "H2H", content: "Content for Tab 3" },
+    { id: "tab4", label: "Trivia", content: "Content for Tab 4" },
   ];
   return (
     <>
