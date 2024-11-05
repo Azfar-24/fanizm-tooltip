@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "../addFund";
 import "../../App.css";
 import { useNavigate } from "react-router-dom";
@@ -6,6 +6,7 @@ import Tippy from "@tippyjs/react";
 import { FaArrowLeft } from "react-icons/fa";
 const AddFund = () => {
   const nevigate = useNavigate();
+  const [step, setStep] = useState("end");
   return (
     <>
       <div

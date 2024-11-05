@@ -6,6 +6,7 @@ const PaymentMethod = () => {
   const nevigate = useNavigate();
   const [paymentOverlay, setPaymentOverlay] = useState(true);
   const [successOverlay, setSuccessOverlay] = useState(false);
+  const [step, setStep] = useState("end");
 
   const handleSuccessOverlay = () => {
     setSuccessOverlay(!successOverlay);
