@@ -8,6 +8,7 @@ const Dropdown = ({ languages, type, setViewContest }) => {
 
   const toggleDropdown = () => {
     setIsDropdownOpen(!isDropdownOpen);
+    handleDrop();
   };
 
   const handleDrop = () => {
@@ -35,7 +36,6 @@ const Dropdown = ({ languages, type, setViewContest }) => {
               key={language}
               onClick={() => selectLanguage(language)}
               className="dropdown-item"
-              onClick={handleDrop}
             >
               <input
                 type="radio"
