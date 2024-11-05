@@ -1,20 +1,11 @@
 import React, { lazy, Suspense } from "react";
 import { createMemoryRouter, RouterProvider } from "react-router-dom";
 import LiveQuiz from "../components/livequiz";
-
-const AppLayout = lazy(() =>
-  import(/* webpackChunkName: "AppLayout" */ "../components/applayout")
-);
-const Home = lazy(() => import(/* webpackChunkName: "home" */ "../pages/home"));
-const AddFund = lazy(() =>
-  import(/* webpackChunkName: "home" */ "../pages/addFund")
-);
-const PaymentMethod = lazy(() =>
-  import(/* webpackChunkName: "home" */ "../pages/paymentMethod")
-);
-const ViewContest = lazy(() =>
-  import(/* webpackChunkName: "home" */ "../pages/viewContest")
-);
+import AppLayout from "../components/applayout";
+import Home from "../pages/home";
+import PaymentMethod from "../pages/paymentMethod";
+import ViewContest from "../pages/viewContest";
+import AddFund from "../pages/addFund";
 
 const childRoutes = [
   {
