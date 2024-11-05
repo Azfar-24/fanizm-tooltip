@@ -119,7 +119,9 @@ const Overlay = ({ handleJoinContestOverlay, quizData }) => {
               theme="custom"
               animation="fade"
               visible={true}
-              content={"This is a highlighted movie!"}
+              content={
+                "You’re locked in! Chill out and get in the zone. It’s about to get real!"
+              }
             >
               <a
                 className="joinContestConfirm single-text highlighted"
