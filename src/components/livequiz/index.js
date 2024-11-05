@@ -292,7 +292,7 @@ const LiveQuiz = () => {
                                                       animation="fade"
                                                       visible={true}
                                                       content={
-                                                        "This is a highlighted movie!"
+                                                        "What do you vibe with? entry fee, total slots, and winnings, choose the contests accordingly!"
                                                       }
                                                       disabled={
                                                         i === 1 ||

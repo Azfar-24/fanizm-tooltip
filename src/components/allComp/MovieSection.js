@@ -57,7 +57,11 @@ const MovieSection = ({
                 theme="custom"
                 animation="fade"
                 visible={true}
-                content={isHighlighted ? "This is a highlighted movie!" : ""}
+                content={
+                  isHighlighted
+                    ? "Pick your quiz, bestie! We all know Pushpa’s the GOAT ;)"
+                    : ""
+                }
                 disabled={!isHighlighted} // Disable tooltip when not highlighted
               >
                 <div>

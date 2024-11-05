@@ -332,7 +332,7 @@ const Footer = ({ step, setStep, active, flag }) => {
       <div className={`footer-quiz-modes-fn`}>
         {step === 1 && <div className="footer-overlay"></div>}
         <Tippy
-          content="This is a customized tooltip"
+          content="Yo! Check out all the game modes!"
           theme="custom"
           animation="fade"
           visible={step === 1}
@@ -409,7 +409,7 @@ const Footer = ({ step, setStep, active, flag }) => {
                 <>
                   {i === 1 ? (
                     <Tippy
-                      content="This is a customized tooltip"
+                      content="Swipe through Mega Quizzes and flex those big wins!"
                       theme="custom"
                       animation="fade"
                       visible={step === 2}
