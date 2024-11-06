@@ -100,7 +100,7 @@ function Home() {
           <div>
             <h3 align="center">This is your guided gameplay.</h3>
           </div>
-          {Number(step) && (
+          {Number(step) && !localStorage.getItem("skipClicked") ? (
             <div
               style={{
                 textAlign: "left",
@@ -119,7 +119,7 @@ function Home() {
                 skip
               </button>
             </div>
-          )}
+          ) : null}
           <div className="swiper-wrap">
             <Swiper
               modules={[Autoplay]}
