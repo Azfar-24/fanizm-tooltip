@@ -300,7 +300,11 @@ const Footer = ({ step, setStep, active, flag }) => {
                   content="See all your contest here"
                   theme="custom"
                   animation="fade"
-                  visible={step !== "end" && true}
+                  visible={
+                    !localStorage.getItem("skipClicked") &&
+                    step !== "end" &&
+                    true
+                  }
                 >
                   <a
                     className={`footer-item ${
@@ -330,14 +334,16 @@ const Footer = ({ step, setStep, active, flag }) => {
         })}
       </div>
       <div className={`footer-quiz-modes-fn`}>
-        {(step === 1 || step === 2) && step !== "end" && (
-          <div className="footer-overlay"></div>
-        )}
+        {(step === 1 || step === 2) &&
+          step !== "end" &&
+          !localStorage.getItem("skipClicked") && (
+            <div className="footer-overlay"></div>
+          )}
         {/* <Tippy
           content="check this out"
           theme="custom"
           animation="fade"
-          visible={ step !=="end" && step === 1}
+          visible={!localStorage.getItem("skipClicked") && step !=="end" && step === 1}
         > */}
         <a
           className={`quiz-modes-handler-fn 
@@ -413,7 +419,11 @@ const Footer = ({ step, setStep, active, flag }) => {
                       content="Swipe through Mega Quizzes and flex those big wins!"
                       theme="custom"
                       animation="fade"
-                      visible={step !== "end" && step === 2}
+                      visible={
+                        !localStorage.getItem("skipClicked") &&
+                        step !== "end" &&
+                        step === 2
+                      }
                     >
                       <a
                         className="qm-nav-item-fn mega selected active highlighted"

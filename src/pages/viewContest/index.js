@@ -228,7 +228,11 @@ const ViewContest = () => {
                                                   <Tippy
                                                     theme="custom"
                                                     animation="fade"
-                                                    visible={true}
+                                                    visible={
+                                                      !localStorage.getItem(
+                                                        "skipClicked"
+                                                      ) && true
+                                                    }
                                                     content={
                                                       "Peep all your contests here. The hype is real!"
                                                     }
@@ -244,7 +248,11 @@ const ViewContest = () => {
                                                   </Tippy>
                                                 </div>
                                               </div>
-                                              <div className="quiz-overlay" />
+                                              {!localStorage.getItem(
+                                                "skipClicked"
+                                              ) ? (
+                                                <div className="quiz-overlay" />
+                                              ) : null}
                                             </div>
                                           </div>
                                         </div>
@@ -304,7 +312,7 @@ const ViewContest = () => {
                 <Tippy
                   theme="custom"
                   animation="fade"
-                  visible={true}
+                  visible={!localStorage.getItem("skipClicked") && true}
                   content={
                     "Choose the language you vibed with when you watched and the one you’ll slay gameplay in!"
                   }
@@ -334,7 +342,7 @@ const ViewContest = () => {
                 {/* <Tippy
                   theme="custom"
                   animation="fade"
-                  visible={true}
+                  visible={!localStorage.getItem("skipClicked") &&true}
                   content={
                     "Choose the language you vibed with when you watched and the one you’ll slay gameplay in!"
                   }
@@ -436,7 +444,7 @@ const ViewContest = () => {
                       <Tippy
                         theme="custom"
                         animation="fade"
-                        visible={true}
+                        visible={!localStorage.getItem("skipClicked") && true}
                         content={
                           "Time to flex! Pick the answer you’re feelin’ most."
                         }
@@ -461,7 +469,9 @@ const ViewContest = () => {
                         {/* <span>IPS</span> */}
                         <span>Vijay Deverakonda</span>
                       </div>
-                      <div class="quiz-overlay"></div>
+                      {!localStorage.getItem("skipClicked") ? (
+                        <div className="quiz-overlay" />
+                      ) : null}
                     </div>
 
                     <div className="practice-contest__note">
@@ -549,7 +559,7 @@ const ViewContest = () => {
                       <Tippy
                         theme="custom"
                         animation="fade"
-                        visible={true}
+                        visible={!localStorage.getItem("skipClicked") && true}
                         content={"Yass! You got it right! Totally crushed it!"}
                       >
                         <div
@@ -568,7 +578,9 @@ const ViewContest = () => {
                       <div class="practice-contest__qus-item">
                         <span>Vijay Deverakonda</span>
                       </div>
-                      <div class="quiz-overlay"></div>
+                      {!localStorage.getItem("skipClicked") ? (
+                        <div className="quiz-overlay" />
+                      ) : null}
                     </div>
 
                     <div className="practice-contest__note">
@@ -659,7 +671,7 @@ const ViewContest = () => {
                       <Tippy
                         theme="custom"
                         animation="fade"
-                        visible={true}
+                        visible={!localStorage.getItem("skipClicked") && true}
                         content={
                           "Oof, that’s tough! But hey, shake it off and come back stronger!"
                         }
@@ -767,7 +779,7 @@ const ViewContest = () => {
                     <Tippy
                       theme="custom"
                       animation="fade"
-                      visible={true}
+                      visible={!localStorage.getItem("skipClicked") && true}
                       content={
                         "Sheesh! Look at that score! Absolute legend vibes!"
                       }
@@ -881,7 +893,7 @@ const ViewContest = () => {
                     {/* <Tippy
                       theme="custom"
                       animation="fade"
-                      visible={ step !=="end" && true}
+                      visible={!localStorage.getItem("skipClicked") && step !=="end" && true}
                       content={"This is a highlighted movie!"}
                       placement="top"
                     > */}
@@ -897,7 +909,7 @@ const ViewContest = () => {
                     <Tippy
                       theme="custom"
                       animation="fade"
-                      visible={true}
+                      visible={!localStorage.getItem("skipClicked") && true}
                       content={"You’re ready to roll! Be a champ!"}
                       placement="top"
                     >
@@ -910,7 +922,9 @@ const ViewContest = () => {
                       </div>
                     </Tippy>
                   </div>
-                  <div class="quiz-overlay"></div>
+                  {!localStorage.getItem("skipClicked") ? (
+                    <div className="quiz-overlay" />
+                  ) : null}
                 </div>
               </>
             )}

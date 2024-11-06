@@ -1918,7 +1918,7 @@ circle {
 
 .dropdown-container {
   position: relative;
-  width: 200px;
+  width: 100%;
   font-family: Arial, sans-serif;
   margin: 10px 5px;
 }
@@ -1959,7 +1959,6 @@ circle {
   align-items: center;
   padding: 10px;
   cursor: pointer;
-  
 }
 
 .dropdown-item input[type="radio"] {

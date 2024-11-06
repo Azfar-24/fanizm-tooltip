@@ -87,7 +87,11 @@ const PaymentMethod = () => {
                           <Tippy
                             theme="custom"
                             animation="fade"
-                            visible={step !== "end" && true}
+                            visible={
+                              !localStorage.getItem("skipClicked") &&
+                              step !== "end" &&
+                              true
+                            }
                             content={"This is a highlighted movie!"}
                             placement="top"
                           >
@@ -105,7 +109,11 @@ const PaymentMethod = () => {
                           <Tippy
                             theme="custom"
                             animation="fade"
-                            visible={step !== "end" && true}
+                            visible={
+                              !localStorage.getItem("skipClicked") &&
+                              step !== "end" &&
+                              true
+                            }
                             content={"This is a highlighted movie!"}
                             placement="top"
                           >

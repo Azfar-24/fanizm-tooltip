@@ -11,10 +11,21 @@ const Tabs = ({ tabs, setStep, step }) => {
       <ul className="tab-list">
         {tabs.map((tab, i) => (
           <Tippy
-            content="Yo! Check out all the game modes!"
+            content={
+              i === 0
+                ? "Yo! Check out all the game modes!"
+                : i === 1
+                ? "Swipe through Mega Quizzes and flex those big wins!"
+                : ""
+            }
             theme="custom"
             animation="fade"
-            visible={step !== "end" && i < 2 && flag === i}
+            visible={
+              !localStorage.getItem("skipClicked") &&
+              step !== "end" &&
+              i < 2 &&
+              flag === i
+            }
           >
             <li
               key={tab.id}

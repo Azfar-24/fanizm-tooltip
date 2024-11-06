@@ -110,7 +110,14 @@ function Home() {
                 justifyContent: "flex-end",
               }}
             >
-              <button onClick={() => setStep("end")}>skip</button>
+              <button
+                onClick={() => {
+                  setStep("end");
+                  localStorage.setItem("skipClicked", 1);
+                }}
+              >
+                skip
+              </button>
             </div>
           )}
           <div className="swiper-wrap">

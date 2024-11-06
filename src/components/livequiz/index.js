@@ -290,7 +290,11 @@ const LiveQuiz = () => {
                                                       key={i} // Unique id for Tippy
                                                       theme="custom"
                                                       animation="fade"
-                                                      visible={true}
+                                                      visible={
+                                                        !localStorage.getItem(
+                                                          "skipClicked"
+                                                        ) && true
+                                                      }
                                                       content={
                                                         "What do you vibe with? entry fee, total slots, and winnings, choose the contests accordingly!"
                                                       }
@@ -354,7 +358,9 @@ const LiveQuiz = () => {
                                             </div>
                                           </div>
                                         </div>
-                                        {i === 0 && !joinContestOverlay ? (
+                                        {i === 0 &&
+                                        !joinContestOverlay &&
+                                        !localStorage.getItem("skipClicked") ? (
                                           <div className="quiz-overlay" />
                                         ) : null}
                                       </div>

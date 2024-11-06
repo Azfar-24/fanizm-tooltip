@@ -118,7 +118,7 @@ const Overlay = ({ handleJoinContestOverlay, quizData }) => {
             <Tippy
               theme="custom"
               animation="fade"
-              visible={true}
+              visible={!localStorage.getItem("skipClicked") && true}
               content={
                 "You’re locked in! Chill out and get in the zone. It’s about to get real!"
               }
@@ -136,7 +136,9 @@ const Overlay = ({ handleJoinContestOverlay, quizData }) => {
             </Tippy>
           </div>
         </div>
-        <div className="quiz-overlay" />
+        {!localStorage.getItem("skipClicked") ? (
+          <div className="quiz-overlay" />
+        ) : null}
       </div>
     </div>
   );

@@ -56,7 +56,9 @@ const MovieSection = ({
                 key={movie.id} // Unique id for Tippy
                 theme="custom"
                 animation="fade"
-                visible={step !== "end" && true}
+                visible={
+                  !localStorage.getItem("skipClicked") && step !== "end" && true
+                }
                 content={
                   isHighlighted
                     ? "Pick your quiz, bestie! We all know Pushpa’s the GOAT ;)"
@@ -78,7 +80,9 @@ const MovieSection = ({
               </Tippy>
             );
           })}
-          {isHighlight ? <div className="movie-overlay" /> : null}
+          {isHighlight && !localStorage.getItem("skipClicked") ? (
+            <div className="movie-overlay" />
+          ) : null}
         </div>
       </section>
     </>

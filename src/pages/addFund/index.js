@@ -130,7 +130,11 @@ const AddFund = () => {
                     <Tippy
                       theme="custom"
                       animation="fade"
-                      visible={step !== "end" && true}
+                      visible={
+                        !localStorage.getItem("skipClicked") &&
+                        step !== "end" &&
+                        true
+                      }
                       content={"This is a highlighted movie!"}
                     >
                       <a
@@ -150,7 +154,9 @@ const AddFund = () => {
           </div>
         </div>
       </div>
-      <div className="footer-overlay "></div>
+      {!localStorage.getItem("skipClicked") ? (
+        <div className="footer-overlay "></div>
+      ) : null}
     </>
   );
 };
