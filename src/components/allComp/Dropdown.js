@@ -13,9 +13,9 @@ const Dropdown = ({ languages, type, setViewContest }) => {
 
   const handleDrop = () => {
     setFlag(flag + 1);
-    if (flag) {
-      setViewContest && setViewContest(2);
-    }
+    // if (flag) {
+    // setViewContest && setViewContest(2);
+    // }
   };
 
   const selectLanguage = (language) => {
@@ -34,7 +34,10 @@ const Dropdown = ({ languages, type, setViewContest }) => {
           {languages.map((language) => (
             <li
               key={language}
-              onClick={() => selectLanguage(language)}
+              onClick={() => {
+                selectLanguage(language);
+                setViewContest && setViewContest(2);
+              }}
               className="dropdown-item"
             >
               <input
@@ -45,7 +48,7 @@ const Dropdown = ({ languages, type, setViewContest }) => {
                 checked={selectedLanguage === language}
                 onChange={() => {
                   selectLanguage(language);
-                  setFlag(flag + 1);
+                  // setFlag(flag + 1);
                 }}
               />
               <label htmlFor={language}>{language}</label>
