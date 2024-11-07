@@ -1,10 +1,13 @@
 // Overlay.js
 import Tippy from "@tippyjs/react";
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import Dropdown from "./Dropdown";
 
 const Overlay = ({ handleJoinContestOverlay, quizData }) => {
   const navigate = useNavigate();
+  const [data, setData] = useState([]);
+  const [open, setOpen] = useState(false);
 
   useEffect(() => {
     // Stop body scroll when component mounts
@@ -114,20 +117,70 @@ const Overlay = ({ handleJoinContestOverlay, quizData }) => {
               </div>
             </div>
           </div>
-          <div className="overlay__footer dual-btn-footer modal-footer ">
+          <div></div>
+          <div
+            className="overlay__footer dual-btn-footer modal-footer "
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              zIndex: 10000000,
+            }}
+          >
+            <h4>Language</h4>
+            <div
+              style={{
+                maxWidth: "260px",
+                width: "100%",
+                height: "70%",
+              }}
+            >
+              <Dropdown
+                languages={[
+                  "Hindi",
+                  "English",
+                  "Telugu",
+                  "Bengali",
+                  "Tamil",
+                  "Kannada",
+                  "Malayalam",
+                ]}
+                type={"English"}
+                setData={setData}
+                data={data}
+                setOpen={setOpen}
+              />
+            </div>
+            <div
+              style={{
+                maxWidth: "260px",
+                width: "100%",
+                height: "70%",
+                marginBottom: "20px",
+              }}
+            >
+              <Dropdown
+                type={"Play Quiz In"}
+                languages={["हिंदी", "English"]}
+                // setViewContest={setViewContest}
+                setData={setData}
+                data={data}
+                setOpen={setOpen}
+              />
+            </div>
             <Tippy
               theme="custom"
               animation="fade"
-              visible={!localStorage.getItem("skipClicked") && true}
+              visible={!localStorage.getItem("skipClicked") && !open}
               content={
                 "You’re locked in! Chill out and get in the zone. It’s about to get real!"
               }
+              placement="bottom"
             >
               <a
                 className="joinContestConfirm single-text highlighted"
                 onClick={() => {
                   // navigate("/add-fund");
-                  navigate("/view-contest");
+                  data.length > 1 && navigate("/view-contest");
                 }}
                 style={{ zIndex: 10 }}
               >

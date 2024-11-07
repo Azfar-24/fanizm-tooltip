@@ -318,7 +318,11 @@ const ViewContest = () => {
                   }
                   placement="top"
                 >
-                  <div className="highlighted" style={{ display: "flex" }}>
+                  <div
+                    className="highlighted"
+                    style={{ display: "flex" }}
+                    onClick={() => setViewContest(2)}
+                  >
                     <Dropdown
                       languages={[
                         "Hindi",
@@ -330,11 +334,13 @@ const ViewContest = () => {
                         "Malayalam",
                       ]}
                       type={"English"}
+                      disable={true}
                     />
                     <Dropdown
                       type={"Play Quiz In"}
                       languages={["हिंदी", "English"]}
-                      setViewContest={setViewContest}
+                      // setViewContest={setViewContest}
+                      disable={true}
                     />
                   </div>
                 </Tippy>

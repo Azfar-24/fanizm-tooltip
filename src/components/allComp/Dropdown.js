@@ -1,13 +1,22 @@
 import React, { useState } from "react";
 // import "./Dropdown.css";
 
-const Dropdown = ({ languages, type, setViewContest }) => {
+const Dropdown = ({
+  languages,
+  type,
+  setViewContest,
+  setData,
+  data,
+  setOpen,
+  disabled,
+}) => {
   const [selectedLanguage, setSelectedLanguage] = useState(type);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [flag, setFlag] = useState(0);
 
   const toggleDropdown = () => {
     setIsDropdownOpen(!isDropdownOpen);
+    setOpen && setOpen(!isDropdownOpen);
     handleDrop();
   };
 
@@ -21,10 +30,15 @@ const Dropdown = ({ languages, type, setViewContest }) => {
   const selectLanguage = (language) => {
     setSelectedLanguage(language);
     setIsDropdownOpen(false);
+    setOpen && setOpen(false);
+    setData([...data, language]);
   };
 
   return (
-    <div className="dropdown-container">
+    <div
+      className="dropdown-container"
+      style={{ pointerEvents: disabled ? "none" : "" }}
+    >
       <div onClick={toggleDropdown} className="dropdown-header">
         <span>{selectedLanguage || "Play Quiz In"}</span>
         <span className="dropdown-arrow">&#9662;</span>
