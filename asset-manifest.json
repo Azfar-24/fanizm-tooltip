@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/fanizm-tooltip/static/css/main.94275dc6.css",
-    "main.js": "/fanizm-tooltip/static/js/main.2224cf21.js",
+    "main.js": "/fanizm-tooltip/static/js/main.f6f25f9f.js",
     "index.html": "/fanizm-tooltip/index.html",
     "main.94275dc6.css.map": "/fanizm-tooltip/static/css/main.94275dc6.css.map",
-    "main.2224cf21.js.map": "/fanizm-tooltip/static/js/main.2224cf21.js.map"
+    "main.f6f25f9f.js.map": "/fanizm-tooltip/static/js/main.f6f25f9f.js.map"
   },
   "entrypoints": [
     "static/css/main.94275dc6.css",
-    "static/js/main.2224cf21.js"
+    "static/js/main.f6f25f9f.js"
   ]
 }
