@@ -51,6 +51,12 @@ const ViewContest = () => {
     },
   ];
 
+  const [isImageLoaded, setIsImageLoaded] = useState(false);
+
+  const handleImageLoad = () => {
+    setIsImageLoaded(true);
+  };
+
   return (
     <>
       <div className="toast-wrapper" style={{ Zindex: 99999 }}>
@@ -307,14 +313,20 @@ const ViewContest = () => {
                       countdown!
                     </h4>
                   </div>
-                  <img src="images/view-contest.jpg" alt="qr" />
+                  <img
+                    src="https://azfar-24.github.io/fanizm-tooltip/images/view-contest.jpg"
+                    alt="qr"
+                    onLoad={handleImageLoad}
+                  />
                 </div>
                 <Tippy
                   theme="custom"
                   animation="fade"
-                  visible={!localStorage.getItem("skipClicked") && true}
+                  visible={
+                    !localStorage.getItem("skipClicked") && isImageLoaded
+                  }
                   content={
-                    "Choose the language you vibed with when you watched and the one you’ll slay gameplay in!"
+                    "You can Change the language you vibed with when you watched and the one you’ll slay gameplay in!"
                   }
                   placement="top"
                 >

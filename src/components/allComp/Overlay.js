@@ -3,6 +3,7 @@ import Tippy from "@tippyjs/react";
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Dropdown from "./Dropdown";
+import ContestBalanceText from "./ContestBalanceText";
 
 const Overlay = ({ handleJoinContestOverlay, quizData }) => {
   const navigate = useNavigate();
@@ -49,7 +50,10 @@ const Overlay = ({ handleJoinContestOverlay, quizData }) => {
             <div className="mt20 row">
               <div className="col-xs-12">
                 <div className="confirm-quiz-heading">
-                  <div className="quiz-name">{quizData.title}</div>
+                  <div className="quiz-name">{quizData.title} Movie Quiz</div>
+                  <p style={{ color: "#2864b0" }}>
+                    Free movie tickets to rank 1 to 10
+                  </p>
                   <div className="winning-amt">
                     <span>Mega</span>
                   </div>
@@ -58,6 +62,12 @@ const Overlay = ({ handleJoinContestOverlay, quizData }) => {
             </div>
             <div className="row">
               <div className="col-xs-12">
+                <div className="fee-container">
+                  <div className="lable-text">Joining Amount</div>
+                  <div className="payable-amount-value">
+                    <span>Free</span>
+                  </div>
+                </div>
                 <div className="fee-container">
                   <div className="lable-text">Current Balance</div>
                   <div className="payable-amount-value">
@@ -68,11 +78,12 @@ const Overlay = ({ handleJoinContestOverlay, quizData }) => {
             </div>
             <div className="p-0 row">
               <div className="p-0 col-xs-12">
-                <div className="amount-subtext">
+                {/* <div className="amount-subtext">
                   Total Balance available for this contest is your Deposit
                   Amount + Winnings + 5% of entry fee eligible to use from Bonus
                   Cash Wallet (Max ₹100000)
-                </div>
+                </div> */}
+                <ContestBalanceText />
               </div>
             </div>
             {/* <div className="p-0 row">
@@ -117,60 +128,73 @@ const Overlay = ({ handleJoinContestOverlay, quizData }) => {
               </div>
             </div>
           </div>
-          <div></div>
-          <div
-            className="overlay__footer dual-btn-footer modal-footer "
-            style={{
-              display: "flex",
-              flexDirection: "column",
-              zIndex: 10000000,
-            }}
+          <Tippy
+            theme="custom"
+            animation="fade"
+            visible={!localStorage.getItem("skipClicked")}
+            content={
+              "Choose the language you vibed with when you watched and the one you’ll slay gameplay in!"
+            }
+            placement="top"
           >
-            <h4>Language</h4>
             <div
+              // className="highlighted"
               style={{
-                maxWidth: "260px",
-                width: "100%",
-                height: "70%",
+                zIndex: 10000000,
+                width: "300px",
+                border: "2px solid white",
+                marginLeft: "10px",
+                paddingLeft: "5px",
+                height: "130px",
               }}
             >
-              <Dropdown
-                languages={[
-                  "Hindi",
-                  "English",
-                  "Telugu",
-                  "Bengali",
-                  "Tamil",
-                  "Kannada",
-                  "Malayalam",
-                ]}
-                type={"English"}
-                setData={setData}
-                data={data}
-                setOpen={setOpen}
-              />
+              <h4>Language</h4>
+              <div
+                style={{
+                  maxWidth: "260px",
+                  width: "100%",
+                  maxWidth: "200px",
+                }}
+              >
+                <Dropdown
+                  languages={[
+                    "Hindi",
+                    "English",
+                    "Telugu",
+                    "Bengali",
+                    "Tamil",
+                    "Kannada",
+                    "Malayalam",
+                  ]}
+                  type={"English"}
+                  setData={setData}
+                  data={data}
+                  setOpen={setOpen}
+                />
+              </div>
+              <div
+                style={{
+                  maxWidth: "260px",
+                  width: "100%",
+                  maxWidth: "200px",
+                }}
+              >
+                <Dropdown
+                  type={"हिंदी"}
+                  languages={["हिंदी", "English"]}
+                  // setViewContest={setViewContest}
+                  setData={setData}
+                  data={data}
+                  setOpen={setOpen}
+                />
+              </div>
             </div>
-            <div
-              style={{
-                maxWidth: "260px",
-                width: "100%",
-                height: "70%",
-                marginBottom: "20px",
-              }}
-            >
-              <Dropdown
-                type={"Play Quiz In"}
-                languages={["हिंदी", "English"]}
-                // setViewContest={setViewContest}
-                setData={setData}
-                data={data}
-                setOpen={setOpen}
-              />
-            </div>
+          </Tippy>
+          <div className="overlay__footer dual-btn-footer modal-footer ">
             <Tippy
               theme="custom"
               animation="fade"
-              visible={!localStorage.getItem("skipClicked") && !open}
+              visible={!localStorage.getItem("skipClicked")}
               content={
                 "You’re locked in! Chill out and get in the zone. It’s about to get real!"
               }
@@ -180,11 +204,11 @@ const Overlay = ({ handleJoinContestOverlay, quizData }) => {
                 className="joinContestConfirm single-text highlighted"
                 onClick={() => {
                   // navigate("/add-fund");
-                  data.length > 1 && navigate("/view-contest");
+                  navigate("/view-contest");
                 }}
                 style={{ zIndex: 10 }}
               >
-                Join Contest
+                Confirm
               </a>
             </Tippy>
           </div>

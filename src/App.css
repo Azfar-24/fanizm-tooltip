@@ -657,7 +657,7 @@ a.quiz-modes-handler-fn.highlighted-element:before {
 }
 .amount-subtext {
   font-size: 12px;
-  color: #fff;
+  color: #2864b0;
   /* font-family: SFProDisplay-Regular; */
   margin: 15px 0 30px;
   margin-bottom: 10px;
@@ -1935,6 +1935,7 @@ circle {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 25px;
 }
 
 .dropdown-arrow {
